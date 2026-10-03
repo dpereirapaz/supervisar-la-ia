@@ -1,0 +1,15 @@
+# Nunca al repositorio (CLAUDE.md, F-07, T-10)
+*.pdf
+!social/out/linkedin-carousel.pdf
+*.docx
+.env
+.env.*
+
+# Material de referencia local del autor
+muestra_*.png
+
+# Sistema y dependencias
+.DS_Store
+node_modules/
+.playwright-cache/
+lighthouse-report*/
