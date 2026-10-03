@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; form-action 'self' https://formspree.io https://api.web3forms.com; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
