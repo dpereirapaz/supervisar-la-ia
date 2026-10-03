@@ -62,3 +62,14 @@ npm run render:social   # S-10, regenera social/out/
 ```
 
 Los activos sociales se regeneran con `node social/render.mjs` a partir de `social/manifest.json`.
+
+## Fuentes
+
+Poppins (400, 600) y Lora (400–600 variable, 400 italic) están en `assets/fonts/` como woff2 con subconjunto Latin (T-05). Se obtuvieron una sola vez de Google Fonts pidiendo la hoja de estilos con un User-Agent de Chrome y descargando las URL del bloque `/* latin */`:
+
+```sh
+curl -sA "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36" \
+  "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+```
+
+El sitio no hace ninguna petición a Google Fonts en tiempo de ejecución.
