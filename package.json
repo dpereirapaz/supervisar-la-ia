@@ -1,0 +1,19 @@
+{
+  "name": "supervisar-la-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estático del whitebook «Supervisión de la IA»",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "check:html": "html-validate index.html 404.html autoevaluacion/index.html whitebook/index.html gracias/index.html privacidad/index.html cookies/index.html aviso-legal/index.html",
+    "check:lighthouse": "node scripts/lighthouse.mjs",
+    "render:social": "node social/render.mjs"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "html-validate": "^11.16.1",
+    "lighthouse": "^13.5.0",
+    "playwright": "^1.63.0"
+  }
+}
