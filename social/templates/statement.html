@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla 1 · statement</title>
+<script type="application/json" id="copy">
+{
+  "kicker": "Supervisión de la IA · Guía breve para consejeros",
+  "statement": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.",
+  "author": "David Pereira Paz",
+  "url": "[__]"
+}
+</script>
+<style>
+  @font-face { font-family: "Poppins"; font-weight: 600; font-display: block; src: url("../../assets/fonts/poppins-600.woff2") format("woff2"); }
+  @font-face { font-family: "Poppins"; font-weight: 400; font-display: block; src: url("../../assets/fonts/poppins-400.woff2") format("woff2"); }
+  :root {
+    --ink: #18212F; --text: #1C2430; --muted: #5A6474; --paper: #FFFFFF; --tint: #F1F3F6; --rule: #D9DCE1; --signal: #C8102E;
+    --on-ink: #DCE1E8; --on-ink-muted: #9AA3B0;
+    --margin: 80px;
+    --statement-size: 92px;
+    --kicker-size: 28px;
+    --author-size: 32px;
+    --footer-size: 28px;
+    --numeral-size: 720px;
+    --rule-width: 48px;
+  }
+  html, body { margin: 0; width: 100vw; height: 100vh; overflow: hidden; }
+  body { background: var(--ink); color: #FFFFFF; font-family: "Poppins", sans-serif; position: relative; }
+  .kicker { position: absolute; left: var(--margin); top: var(--margin); font-weight: 400; font-size: var(--kicker-size); color: var(--on-ink-muted); }
+  .block { position: absolute; left: var(--margin); top: 50%; transform: translateY(-50%); width: 78%; }
+  .rule { width: var(--rule-width); height: 4px; background: var(--signal); margin-bottom: 36px; }
+  .statement { margin: 0; font-weight: 600; font-size: var(--statement-size); line-height: 1.1; color: #FFFFFF; }
+  .author { margin-top: 48px; font-weight: 400; font-size: var(--author-size); color: #FFFFFF; }
+  .numeral { position: absolute; right: -0.12em; bottom: -0.26em; font-weight: 600; font-size: var(--numeral-size); line-height: 1; color: var(--signal); opacity: 0.4; }
+  .footer { position: absolute; left: var(--margin); bottom: var(--margin); font-weight: 400; font-size: var(--footer-size); color: var(--on-ink-muted); }
+</style>
+</head>
+<body>
+  <div class="kicker" data-field="kicker"></div>
+  <div class="block">
+    <div class="rule"></div>
+    <p class="statement" data-field="statement"></p>
+    <div class="author" data-field="author"></div>
+  </div>
+  <div class="numeral" aria-hidden="true">6</div>
+  <div class="footer" data-field="url"></div>
+  <script>
+    (function () {
+      var copy = JSON.parse(document.getElementById("copy").textContent);
+      var over = window.__copy || {};
+      Object.keys(over).forEach(function (k) { copy[k] = over[k]; });
+      var vars = window.__vars || {};
+      Object.keys(vars).forEach(function (k) { document.documentElement.style.setProperty(k, vars[k]); });
+      document.querySelectorAll("[data-field]").forEach(function (el) {
+        var v = copy[el.getAttribute("data-field")];
+        if (v == null) return;
+        if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v;
+      });
+    })();
+  </script>
+</body>
+</html>

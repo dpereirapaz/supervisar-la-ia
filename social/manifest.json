@@ -1,12 +1,194 @@
 {
   "items": [
     {
+      "file": "linkedin-post-statement-1.png",
+      "template": "statement.html",
+      "size": [1200, 1200],
+      "copy": { "statement": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.", "url": "[__]" },
+      "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
+      "alt": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar. David Pereira Paz."
+    },
+    {
+      "file": "linkedin-post-statement-2.png",
+      "template": "statement.html",
+      "size": [1200, 1200],
+      "copy": { "statement": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara.", "url": "[__]" },
+      "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
+      "alt": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara."
+    },
+    {
+      "file": "linkedin-post-statement-3.png",
+      "template": "statement.html",
+      "size": [1200, 1200],
+      "copy": { "statement": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
+      "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
+      "alt": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
+    },
+    {
+      "file": "linkedin-post-question-4.png",
+      "template": "question.html",
+      "size": [1200, 1200],
+      "copy": { "question": "¿Puede la dirección decirnos qué no va a hacer este año con la IA, quién puede frenar un proyecto y qué dato nos va a traer?", "answer": "Si no, el consejo todavía no supervisa la IA.", "url": "[__]" },
+      "vars": { "--question-size": "72px", "--answer-size": "40px", "--margin": "80px" },
+      "alt": "¿Puede la dirección decirnos qué no va a hacer con la IA, quién puede frenar un proyecto y qué dato nos va a traer?"
+    },
+    {
+      "file": "linkedin-post-question-5.png",
+      "template": "question.html",
+      "size": [1200, 1200],
+      "copy": { "question": "¿Cuántos de sus pilotos de IA tienen fecha para ampliarse o cerrarse?", "answer": "Un piloto sin fecha es la forma más cara de aplazar una decisión.", "url": "[__]" },
+      "vars": { "--question-size": "72px", "--answer-size": "40px", "--margin": "80px" },
+      "alt": "¿Cuántos de sus pilotos de IA tienen fecha para ampliarse o cerrarse? Un piloto sin fecha es aplazar una decisión."
+    },
+
+    {
+      "file": "linkedin-carousel-01-portada.png",
+      "template": "cover.html",
+      "size": [1080, 1350],
+      "copy": { "url": "[__]" },
+      "vars": { "--title-size": "132px", "--subtitle-size": "44px", "--numeral-size": "900px", "--footer-size": "28px", "--margin": "80px" },
+      "alt": "Portada del carrusel: Supervisar la IA. Seis decisiones que un consejo no puede delegar."
+    },
+    {
+      "file": "linkedin-carousel-02-por-donde-empezar.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "1", "kicker": "Decisión 1 de 6", "title": "Por dónde empezar", "description": "Elegir los usos por valor, riesgo y viabilidad. Tan importante como lo que se aprueba es lo que se descarta.", "url": "[__]" },
+      "alt": "Decisión 1 de 6, Por dónde empezar: elegir los usos por valor, riesgo y viabilidad."
+    },
+    {
+      "file": "linkedin-carousel-03-como-gobernarla.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "2", "kicker": "Decisión 2 de 6", "title": "Cómo gobernarla", "description": "Que alguien con nombre pueda detener un sistema mañana, y que toda la organización sepa quién es.", "url": "[__]" },
+      "alt": "Decisión 2 de 6, Cómo gobernarla: que alguien con nombre pueda detener un sistema mañana."
+    },
+    {
+      "file": "linkedin-carousel-04-de-las-pruebas-a-los-resultados.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "3", "kicker": "Decisión 3 de 6", "title": "Cómo pasar de las pruebas a los resultados", "description": "Cada piloto nace con una fecha para ampliarse o cerrarse.", "url": "[__]" },
+      "alt": "Decisión 3 de 6, Cómo pasar de las pruebas a los resultados: cada piloto nace con una fecha."
+    },
+    {
+      "file": "linkedin-carousel-05-como-medir.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "4", "kicker": "Decisión 4 de 6", "title": "Cómo medir", "description": "Un dato de valor llega al consejo, y alguien responde de él.", "url": "[__]" },
+      "alt": "Decisión 4 de 6, Cómo medir: un dato de valor llega al consejo, y alguien responde de él."
+    },
+    {
+      "file": "linkedin-carousel-06-sobre-que-tecnologia-construir.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "5", "kicker": "Decisión 5 de 6", "title": "Sobre qué tecnología construir", "description": "Cambiar de proveedor es una decisión de gestión, no una reconstrucción.", "url": "[__]" },
+      "alt": "Decisión 5 de 6, Sobre qué tecnología construir: cambiar de proveedor es una decisión de gestión."
+    },
+    {
+      "file": "linkedin-carousel-07-como-implicar-a-las-personas.png",
+      "template": "decision.html",
+      "size": [1080, 1350],
+      "copy": { "number": "6", "kicker": "Decisión 6 de 6", "title": "Cómo implicar a las personas", "description": "El uso sobrevive a la salida de quien lo impulsó.", "url": "[__]" },
+      "alt": "Decisión 6 de 6, Cómo implicar a las personas: el uso sobrevive a la salida de quien lo impulsó."
+    },
+
+    {
       "file": "linkedin-link-cover.png",
       "template": "cover.html",
       "size": [1200, 630],
+      "copy": { "url": "[__]" },
       "vars": { "--title-size": "96px", "--subtitle-size": "36px", "--numeral-size": "420px", "--footer-size": "24px", "--margin": "72px" },
       "alt": "Portada: Supervisar la IA. Seis decisiones que un consejo no puede delegar. David Pereira Paz."
+    },
+
+    {
+      "file": "linkedin-banner.png",
+      "template": "banner.html",
+      "size": [1584, 396],
+      "copy": { "url": "[__]" },
+      "vars": { "--title-size": "56px", "--subtitle-size": "30px", "--url-size": "28px", "--numeral-size": "560px", "--text-left": "20%", "--text-right": "36%" },
+      "alt": "Supervisar la IA sin ser técnico. Guía breve y autoevaluación gratuita para consejeros."
+    },
+
+    {
+      "file": "x-post-statement-1.png",
+      "template": "statement.html",
+      "size": [1600, 900],
+      "copy": { "statement": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.", "url": "[__]" },
+      "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
+      "alt": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar. David Pereira Paz."
+    },
+    {
+      "file": "x-post-statement-2.png",
+      "template": "statement.html",
+      "size": [1600, 900],
+      "copy": { "statement": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara.", "url": "[__]" },
+      "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
+      "alt": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara."
+    },
+    {
+      "file": "x-post-statement-3.png",
+      "template": "statement.html",
+      "size": [1600, 900],
+      "copy": { "statement": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
+      "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
+      "alt": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
+    },
+
+    {
+      "file": "x-thread-1.png",
+      "template": "statement.html",
+      "size": [1600, 900],
+      "copy": { "statement": "Supervisar la IA sin ser técnico. Seis decisiones que un consejo no puede delegar.", "url": "[__]" },
+      "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
+      "alt": "Supervisar la IA sin ser técnico. Seis decisiones que un consejo no puede delegar. David Pereira Paz."
+    },
+    {
+      "file": "x-thread-2.png",
+      "template": "question.html",
+      "size": [1600, 900],
+      "copy": { "question": "¿Quién puede parar un sistema de IA mañana en su empresa?", "answer": "Si nadie sabe el nombre, no hay gobierno.", "url": "[__]" },
+      "vars": { "--question-size": "72px", "--answer-size": "40px", "--margin": "96px" },
+      "alt": "¿Quién puede parar un sistema de IA mañana en su empresa? Si nadie sabe el nombre, no hay gobierno."
+    },
+    {
+      "file": "x-thread-3.png",
+      "template": "question.html",
+      "size": [1600, 900],
+      "copy": { "question": "¿Qué dato de valor llega al consejo, y quién responde de él?", "answer": "Los datos de uso son para la dirección. Al consejo le llega el valor.", "url": "[__]" },
+      "vars": { "--question-size": "72px", "--answer-size": "40px", "--margin": "96px" },
+      "alt": "¿Qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección."
+    },
+    {
+      "file": "x-thread-4.png",
+      "template": "statement.html",
+      "size": [1600, 900],
+      "copy": { "statement": "Dieciocho afirmaciones, cinco minutos. Autoevaluación gratuita para consejos.", "url": "[__]" },
+      "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
+      "alt": "Dieciocho afirmaciones, cinco minutos. Autoevaluación gratuita para consejos. David Pereira Paz."
+    },
+
+    {
+      "file": "x-header.png",
+      "template": "banner.html",
+      "size": [1500, 500],
+      "copy": { "url": "[__]" },
+      "vars": { "--title-size": "64px", "--subtitle-size": "32px", "--url-size": "28px", "--numeral-size": "640px", "--text-left": "20%", "--text-right": "36%" },
+      "alt": "Supervisar la IA sin ser técnico. Guía breve y autoevaluación gratuita para consejeros."
     }
   ],
-  "copies": { "linkedin-link-cover.png": "assets/img/og-image.png" }
+  "copies": { "linkedin-link-cover.png": "assets/img/og-image.png" },
+  "carousel": {
+    "file": "linkedin-carousel.pdf",
+    "size": [1080, 1350],
+    "pages": [
+      "linkedin-carousel-01-portada.png",
+      "linkedin-carousel-02-por-donde-empezar.png",
+      "linkedin-carousel-03-como-gobernarla.png",
+      "linkedin-carousel-04-de-las-pruebas-a-los-resultados.png",
+      "linkedin-carousel-05-como-medir.png",
+      "linkedin-carousel-06-sobre-que-tecnologia-construir.png",
+      "linkedin-carousel-07-como-implicar-a-las-personas.png"
+    ]
+  }
 }

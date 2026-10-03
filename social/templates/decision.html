@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla 3 · decision</title>
+<script type="application/json" id="copy">
+{
+  "number": "1",
+  "kicker": "Decisión 1 de 6",
+  "title": "Por dónde empezar",
+  "description": "Elegir los usos por valor, riesgo y viabilidad. Tan importante como lo que se aprueba es lo que se descarta.",
+  "url": "[__]"
+}
+</script>
+<style>
+  @font-face { font-family: "Poppins"; font-weight: 600; font-display: block; src: url("../../assets/fonts/poppins-600.woff2") format("woff2"); }
+  @font-face { font-family: "Poppins"; font-weight: 400; font-display: block; src: url("../../assets/fonts/poppins-400.woff2") format("woff2"); }
+  @font-face { font-family: "Lora"; font-weight: 400 600; font-display: block; src: url("../../assets/fonts/lora-regular.woff2") format("woff2"); }
+  :root {
+    --ink: #18212F; --text: #1C2430; --muted: #5A6474; --paper: #FFFFFF; --tint: #F1F3F6; --rule: #D9DCE1; --signal: #C8102E;
+    --margin: 80px;
+    --numeral-size: 240px;
+    --kicker-size: 32px;
+    --title-size: 64px;
+    --description-size: 40px;
+    --footer-size: 28px;
+  }
+  html, body { margin: 0; width: 100vw; height: 100vh; overflow: hidden; }
+  body { background: var(--paper); color: var(--text); font-family: "Poppins", sans-serif; position: relative; }
+  .top { position: absolute; left: var(--margin); right: var(--margin); top: var(--margin); display: flex; align-items: flex-start; gap: 40px; }
+  .numeral { font-weight: 600; font-size: var(--numeral-size); line-height: 0.8; color: var(--signal); margin: 0; }
+  .kicker { font-weight: 600; font-size: var(--kicker-size); color: var(--signal); margin-top: 0.3em; }
+  .block { position: absolute; left: var(--margin); right: var(--margin); top: calc(var(--margin) + var(--numeral-size) * 0.8 + 72px); }
+  .title { margin: 0 0 32px; font-weight: 600; font-size: var(--title-size); line-height: 1.12; color: var(--ink); }
+  .description { margin: 0; font-family: "Lora", serif; font-weight: 400; font-size: var(--description-size); line-height: 1.4; color: var(--text); max-width: 85%; }
+  .progress { position: absolute; left: var(--margin); right: var(--margin); bottom: calc(var(--margin) + 72px); display: flex; gap: 16px; }
+  .progress span { flex: 1; height: 12px; background: var(--rule); }
+  .progress span.on { background: var(--signal); }
+  .footer { position: absolute; left: var(--margin); bottom: var(--margin); font-weight: 400; font-size: var(--footer-size); color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="top">
+    <p class="numeral" data-field="number"></p>
+    <div class="kicker" data-field="kicker"></div>
+  </div>
+  <div class="block">
+    <h1 class="title" data-field="title"></h1>
+    <p class="description" data-field="description"></p>
+  </div>
+  <div class="progress" id="progress"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="footer" data-field="url"></div>
+  <script>
+    (function () {
+      var copy = JSON.parse(document.getElementById("copy").textContent);
+      var over = window.__copy || {};
+      Object.keys(over).forEach(function (k) { copy[k] = over[k]; });
+      var vars = window.__vars || {};
+      Object.keys(vars).forEach(function (k) { document.documentElement.style.setProperty(k, vars[k]); });
+      document.querySelectorAll("[data-field]").forEach(function (el) {
+        var v = copy[el.getAttribute("data-field")];
+        if (v == null) return;
+        if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v;
+      });
+      var n = parseInt(copy.number, 10);
+      var segs = document.querySelectorAll("#progress span");
+      if (segs[n - 1]) segs[n - 1].className = "on";
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla 6 · author (opcional, requiere assets/img/author.jpg)</title>
+<script type="application/json" id="copy">
+{
+  "photo": "../../assets/img/author.jpg",
+  "name": "David Pereira Paz",
+  "role": "Ingeniero de Telecomunicación. Dirige el área global de Datos e Inteligencia Artificial de una consultora tecnológica internacional.",
+  "quote": "[__]",
+  "url": "[__]"
+}
+</script>
+<style>
+  @font-face { font-family: "Poppins"; font-weight: 600; font-display: block; src: url("../../assets/fonts/poppins-600.woff2") format("woff2"); }
+  @font-face { font-family: "Poppins"; font-weight: 400; font-display: block; src: url("../../assets/fonts/poppins-400.woff2") format("woff2"); }
+  @font-face { font-family: "Lora"; font-weight: 400 600; font-display: block; src: url("../../assets/fonts/lora-regular.woff2") format("woff2"); }
+  @font-face { font-family: "Lora"; font-style: italic; font-weight: 400; font-display: block; src: url("../../assets/fonts/lora-italic.woff2") format("woff2"); }
+  :root {
+    --ink: #18212F; --text: #1C2430; --muted: #5A6474; --paper: #FFFFFF; --signal: #C8102E;
+    --margin: 80px;
+    --name-size: 56px;
+    --role-size: 32px;
+    --quote-size: 40px;
+    --footer-size: 28px;
+  }
+  html, body { margin: 0; width: 100vw; height: 100vh; overflow: hidden; }
+  body { background: var(--paper); color: var(--text); font-family: "Poppins", sans-serif; position: relative; }
+  .block { position: absolute; left: var(--margin); right: var(--margin); top: 50%; transform: translateY(-50%); display: flex; gap: 64px; align-items: center; }
+  .photo { width: 480px; height: 480px; flex: 0 0 480px; object-fit: cover; border-radius: 12px; filter: grayscale(1); }
+  .name { margin: 0 0 16px; font-weight: 600; font-size: var(--name-size); line-height: 1.12; color: var(--ink); }
+  .role { margin: 0 0 32px; font-family: "Lora", serif; font-size: var(--role-size); line-height: 1.4; color: var(--muted); }
+  .quote { margin: 0; font-family: "Lora", serif; font-style: italic; font-size: var(--quote-size); line-height: 1.35; color: var(--ink); }
+  .footer { position: absolute; left: var(--margin); bottom: var(--margin); font-weight: 400; font-size: var(--footer-size); color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="block">
+    <img class="photo" data-field="photo" data-src alt="">
+    <div>
+      <p class="name" data-field="name"></p>
+      <p class="role" data-field="role"></p>
+      <p class="quote" data-field="quote"></p>
+    </div>
+  </div>
+  <div class="footer" data-field="url"></div>
+  <script>
+    (function () {
+      var copy = JSON.parse(document.getElementById("copy").textContent);
+      var over = window.__copy || {};
+      Object.keys(over).forEach(function (k) { copy[k] = over[k]; });
+      var vars = window.__vars || {};
+      Object.keys(vars).forEach(function (k) { document.documentElement.style.setProperty(k, vars[k]); });
+      document.querySelectorAll("[data-field]").forEach(function (el) {
+        var v = copy[el.getAttribute("data-field")];
+        if (v == null) return;
+        if (el.hasAttribute("data-src")) el.src = v;
+        else if (el.hasAttribute("data-html")) el.innerHTML = v;
+        else el.textContent = v;
+      });
+    })();
+  </script>
+</body>
+</html>

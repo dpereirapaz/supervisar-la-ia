@@ -1,6 +1,6 @@
 // Renderiza los activos sociales de SPEC.md, sección 13 (S-10), a partir de social/manifest.json
 import { chromium } from "playwright";
-import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir, copyFile, unlink } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "node:path";
 
@@ -38,10 +38,13 @@ if (manifest.carousel && (!only.length || only.includes(manifest.carousel.file))
   const html = manifest.carousel.pages.map((f) =>
     `<div style="width:${width}px;height:${height}px;break-after:page;overflow:hidden"><img src="${pathToFileURL(path.join(outDir, f)).href}" style="display:block;width:${width}px;height:${height}px"></div>`
   ).join("");
+  const tmp = path.join(outDir, ".carousel.html");
+  await writeFile(tmp, `<!DOCTYPE html><html><head><meta charset="utf-8"><style>@page{size:${width}px ${height}px;margin:0}html,body{margin:0}</style></head><body>${html}</body></html>`);
   const page = await browser.newPage({ viewport: { width, height } });
-  await page.setContent(`<!DOCTYPE html><html><head><style>@page{size:${width}px ${height}px;margin:0}html,body{margin:0}</style></head><body>${html}</body></html>`);
+  await page.goto(pathToFileURL(tmp).href, { waitUntil: "load" });
   await page.pdf({ path: path.join(outDir, manifest.carousel.file), width: `${width}px`, height: `${height}px`, printBackground: true, preferCSSPageSize: true });
   await page.close();
+  await unlink(tmp);
   console.log("ok", manifest.carousel.file, `${manifest.carousel.pages.length} páginas`);
 }
 

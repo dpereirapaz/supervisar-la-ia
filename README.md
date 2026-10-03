@@ -61,7 +61,7 @@ npm run check:lighthouse # A-02
 npm run render:social   # S-10, regenera social/out/
 ```
 
-Los activos sociales se regeneran con `node social/render.mjs` a partir de `social/manifest.json`.
+Los activos sociales se regeneran con `node social/render.mjs` a partir de `social/manifest.json` (plantillas en `social/templates/`, salida en `social/out/` con `alt.json`, `posts.md` y `linkedin-carousel.pdf`). Antes de publicar, sustituya `"url": "[__]"` en el manifiesto por la URL pública y vuelva a ejecutar el script; `assets/img/og-image.png` se actualiza automáticamente (S-14). El favicon PNG se regenera con `node scripts/favicon.mjs`.
 
 ## Fuentes
 

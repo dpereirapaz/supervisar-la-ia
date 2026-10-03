@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla 5 · banner</title>
+<script type="application/json" id="copy">
+{
+  "title": "Supervisar la IA sin ser técnico",
+  "subtitle": "Guía breve y autoevaluación gratuita para consejeros",
+  "url": "[__]"
+}
+</script>
+<style>
+  @font-face { font-family: "Poppins"; font-weight: 600; font-display: block; src: url("../../assets/fonts/poppins-600.woff2") format("woff2"); }
+  @font-face { font-family: "Poppins"; font-weight: 400; font-display: block; src: url("../../assets/fonts/poppins-400.woff2") format("woff2"); }
+  @font-face { font-family: "Lora"; font-style: italic; font-weight: 400; font-display: block; src: url("../../assets/fonts/lora-italic.woff2") format("woff2"); }
+  :root {
+    --ink: #18212F; --signal: #C8102E; --on-ink: #DCE1E8; --on-ink-muted: #9AA3B0;
+    --title-size: 72px;
+    --subtitle-size: 36px;
+    --url-size: 28px;
+    --numeral-size: 640px;
+    --text-left: 20%;
+    --text-right: 38%;
+  }
+  html, body { margin: 0; width: 100vw; height: 100vh; overflow: hidden; }
+  body { background: var(--ink); color: #FFFFFF; font-family: "Poppins", sans-serif; position: relative; }
+  /* Franja central del 70 % de la altura: las fotos de perfil tapan la esquina inferior izquierda */
+  .zone { position: absolute; left: var(--text-left); right: var(--text-right); top: 15%; bottom: 15%; display: flex; flex-direction: column; justify-content: center; }
+  .title { margin: 0 0 12px; font-weight: 600; font-size: var(--title-size); line-height: 1.1; color: #FFFFFF; }
+  .subtitle { margin: 0 0 12px; font-family: "Lora", serif; font-style: italic; font-weight: 400; font-size: var(--subtitle-size); line-height: 1.3; color: var(--on-ink); }
+  .url { margin: 0; font-weight: 400; font-size: var(--url-size); color: var(--on-ink-muted); }
+  .numeral { position: absolute; right: -0.06em; top: -0.18em; font-weight: 600; font-size: var(--numeral-size); line-height: 1; color: var(--signal); opacity: 0.4; }
+</style>
+</head>
+<body>
+  <div class="zone">
+    <p class="title" data-field="title"></p>
+    <p class="subtitle" data-field="subtitle"></p>
+    <p class="url" data-field="url"></p>
+  </div>
+  <div class="numeral" aria-hidden="true">6</div>
+  <script>
+    (function () {
+      var copy = JSON.parse(document.getElementById("copy").textContent);
+      var over = window.__copy || {};
+      Object.keys(over).forEach(function (k) { copy[k] = over[k]; });
+      var vars = window.__vars || {};
+      Object.keys(vars).forEach(function (k) { document.documentElement.style.setProperty(k, vars[k]); });
+      document.querySelectorAll("[data-field]").forEach(function (el) {
+        var v = copy[el.getAttribute("data-field")];
+        if (v == null) return;
+        if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v;
+      });
+    })();
+  </script>
+</body>
+</html>
