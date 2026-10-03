@@ -4,13 +4,9 @@ Sitio estático del whitebook «Supervisión de la IA. Seis decisiones que un co
 
 ## Propósito
 
-Tres funciones:
+El sitio presenta el whitebook, ofrece una autoevaluación gratuita para consejos de administración (18 afirmaciones, calculadas en el navegador) y recoge el correo del lector a cambio del PDF o del resultado.
 
-1. Presentar el whitebook.
-2. Ofrecer una autoevaluación gratuita para consejos de administración (18 afirmaciones, cálculo en el navegador).
-3. Recoger el correo del lector a cambio del PDF o del resultado de la autoevaluación.
-
-Sin código de servidor, sin cookies, sin analítica, sin dependencias en tiempo de ejecución. HTML5, CSS3 y JavaScript vanilla (ES2020).
+Es HTML5, CSS3 y JavaScript vanilla (ES2020). No tiene código de servidor, cookies, analítica ni dependencias en tiempo de ejecución.
 
 ## Vista previa local
 
@@ -38,7 +34,7 @@ Sustituya `[__]` por el identificador del formulario que le da Formspree al crea
 
 ### Enlace privado del PDF (T-10)
 
-El PDF no está en el repositorio ni en el sitio. Súbalo a un enlace privado (Google Drive «cualquiera con el enlace», Dropbox, etc.) y configure en Formspree la respuesta automática (**Form → Settings → Autoresponse**) con ese enlace. El mismo correo sirve para los dos formularios.
+El PDF no está en el repositorio ni en el sitio. Súbalo a un enlace privado (Google Drive con «cualquiera con el enlace», Dropbox, etc.) y ponga ese enlace en la respuesta automática de Formspree (Form → Settings → Autoresponse). El mismo correo sirve para los dos formularios.
 
 ### Datos del autor
 
@@ -46,9 +42,13 @@ Los huecos `[__]` de las páginas legales (`privacidad/`, `cookies/`, `aviso-leg
 
 ## Despliegue
 
-**GitHub Pages (principal).** `.github/workflows/deploy.yml` publica la raíz de la rama `main`. En el repositorio: **Settings → Pages → Source: GitHub Actions**. La URL es `https://dpereirapaz.github.io/supervisar-la-ia/`.
+### GitHub Pages (principal)
 
-**Netlify (alternativa).** `netlify.toml` publica la raíz y añade las cabeceras de seguridad de T-11 (GitHub Pages no admite cabeceras personalizadas).
+`.github/workflows/deploy.yml` publica la raíz de la rama `main`. En el repositorio, Settings → Pages → Source: GitHub Actions. La URL es `https://dpereirapaz.github.io/supervisar-la-ia/`.
+
+### Netlify (alternativa)
+
+`netlify.toml` publica la raíz y añade las cabeceras de seguridad de T-11, que GitHub Pages no admite.
 
 ## Comprobaciones
 
