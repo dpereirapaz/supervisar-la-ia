@@ -198,6 +198,8 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--signal);
   margin-bottom: 12px;
 }
+.hero .kicker,
+.section--ink .kicker { color: var(--on-ink-muted); }
 
 /* 8. Botones (D-04, D-05) */
 .btn {
