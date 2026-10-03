@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /supervisar-la-ia/gracias/
+Allow: /
+
+Sitemap: https://dpereirapaz.github.io/supervisar-la-ia/sitemap.xml
