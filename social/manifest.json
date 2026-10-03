@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "file": "linkedin-link-cover.png",
+      "template": "cover.html",
+      "size": [1200, 630],
+      "vars": { "--title-size": "96px", "--subtitle-size": "36px", "--numeral-size": "420px", "--footer-size": "24px", "--margin": "72px" },
+      "alt": "Portada: Supervisar la IA. Seis decisiones que un consejo no puede delegar. David Pereira Paz."
+    }
+  ],
+  "copies": { "linkedin-link-cover.png": "assets/img/og-image.png" }
+}
