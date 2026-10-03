@@ -4,25 +4,25 @@
       "file": "linkedin-post-statement-1.png",
       "template": "statement.html",
       "size": [1200, 1200],
-      "copy": { "statement": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.", "url": "[__]" },
+      "copy": { "statement": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja.", "url": "[__]" },
       "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
-      "alt": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar. David Pereira Paz."
+      "alt": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja. David Pereira Paz."
     },
     {
       "file": "linkedin-post-statement-2.png",
       "template": "statement.html",
       "size": [1200, 1200],
-      "copy": { "statement": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara.", "url": "[__]" },
+      "copy": { "statement": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada.", "url": "[__]" },
       "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
-      "alt": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara."
+      "alt": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada."
     },
     {
       "file": "linkedin-post-statement-3.png",
       "template": "statement.html",
       "size": [1200, 1200],
-      "copy": { "statement": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
+      "copy": { "statement": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
       "vars": { "--statement-size": "92px", "--numeral-size": "720px", "--margin": "80px" },
-      "alt": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
+      "alt": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
     },
     {
       "file": "linkedin-post-question-4.png",
@@ -114,25 +114,25 @@
       "file": "x-post-statement-1.png",
       "template": "statement.html",
       "size": [1600, 900],
-      "copy": { "statement": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.", "url": "[__]" },
+      "copy": { "statement": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja.", "url": "[__]" },
       "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
-      "alt": "Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar. David Pereira Paz."
+      "alt": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja. David Pereira Paz."
     },
     {
       "file": "x-post-statement-2.png",
       "template": "statement.html",
       "size": [1600, 900],
-      "copy": { "statement": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara.", "url": "[__]" },
+      "copy": { "statement": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada.", "url": "[__]" },
       "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
-      "alt": "Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara."
+      "alt": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada."
     },
     {
       "file": "x-post-statement-3.png",
       "template": "statement.html",
       "size": [1600, 900],
-      "copy": { "statement": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
+      "copy": { "statement": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez.", "url": "[__]" },
       "vars": { "--statement-size": "80px", "--numeral-size": "600px", "--margin": "96px" },
-      "alt": "Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
+      "alt": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez. David Pereira Paz."
     },
 
     {
@@ -155,7 +155,7 @@
       "file": "x-thread-3.png",
       "template": "question.html",
       "size": [1600, 900],
-      "copy": { "question": "¿Qué dato de valor llega al consejo, y quién responde de él?", "answer": "Los datos de uso son para la dirección. Al consejo le llega el valor.", "url": "[__]" },
+      "copy": { "question": "¿Qué dato de valor llega al consejo, y quién responde de él?", "answer": "Los datos de uso son para la dirección; al consejo le llega el valor.", "url": "[__]" },
       "vars": { "--question-size": "72px", "--answer-size": "40px", "--margin": "96px" },
       "alt": "¿Qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección."
     },

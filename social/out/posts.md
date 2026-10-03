@@ -7,7 +7,7 @@ El autor añade la URL en el primer comentario en LinkedIn (LinkedIn reduce el a
 ```
 He escrito una guía breve para consejeros sobre cómo supervisar la IA sin ser técnico.
 
-No explica la tecnología. Explica qué exigir a la dirección: seis decisiones que un consejo no puede delegar, qué pedir en las tres próximas reuniones y una autoevaluación de dieciocho afirmaciones.
+Explica qué exigir a la dirección, no la tecnología: seis decisiones que un consejo no puede delegar, qué pedir en las tres próximas reuniones y una autoevaluación de dieciocho afirmaciones.
 
 Es gratuita. El enlace está en el primer comentario.
 ```
@@ -17,7 +17,7 @@ Es gratuita. El enlace está en el primer comentario.
 ```
 Dieciocho afirmaciones, cinco minutos.
 
-El resultado no da una nota. Dice qué decisiones puntúan cero, que es lo único que importa para la próxima reunión del consejo.
+En vez de una nota, el resultado dice qué decisiones puntúan cero, que es lo único que importa para la próxima reunión del consejo.
 
 Autoevaluación gratuita para consejos, en el primer comentario.
 ```
@@ -29,7 +29,7 @@ Autoevaluación gratuita para consejos, en el primer comentario.
 
 2/ Primera prueba: ¿quién puede parar un sistema de IA mañana en su empresa? Si nadie sabe el nombre, no hay gobierno.
 
-3/ Segunda: ¿qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección. Al consejo le llega el valor.
+3/ Segunda: ¿qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección; al consejo le llega el valor.
 
 4/ Hay una autoevaluación de dieciocho afirmaciones. Cinco minutos. Dice qué decisiones puntúan cero. [URL]
 ```

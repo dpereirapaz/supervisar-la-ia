@@ -106,7 +106,7 @@ All content below is final copy in Spanish. Use it as given. Do not translate it
 
 - Kicker: `Guía breve para consejeros`
 - Title (H1): `Supervisar la IA sin ser técnico`
-- Subtitle: `Seis decisiones que un consejo de administración no puede delegar. Una hora de lectura. Criterio suficiente para preguntar, exigir y decidir.`
+- Subtitle: `Seis decisiones que un consejo de administración no puede delegar. Una hora de lectura y criterio suficiente para preguntar, exigir y decidir.`
 - Primary button: `Descargar el whitebook` → `/whitebook/`
 - Secondary button: `Hacer la autoevaluación` → `/autoevaluacion/`
 
@@ -202,7 +202,7 @@ The result area shows:
 - Total score as `N / 54`.
 - Six bars, one per group, each with the group score as `n / 9`.
 - One line of text: `Decisiones que puntúan cero: ` followed by the group titles whose score is 0, or `ninguna`.
-- One fixed sentence: `Una puntuación baja no es un fracaso. Es el punto de partida que tienen hoy casi todas las empresas.`
+- One fixed sentence: `Una puntuación baja es el punto de partida que tienen hoy casi todas las empresas.`
 - A form (see F-05) with title `Reciba el resultado y el whitebook por correo` and button `Enviar`.
 
 The result area must not show a ranking, a benchmark, a percentile, a traffic light, or an interpretation by score band. This is a deliberate decision of the author.
@@ -511,9 +511,9 @@ All copy is in Spanish and final. Do not change it. Where several variants are g
 
 **L1 · LinkedIn single image** (Template 1 and Template 2). Render these five:
 
-1. T1 · `Lo que se alquila no es una ventaja. La estrategia empieza por lo que no se puede comprar.`
-2. T1 · `Una máquina no puede responder de nada. Detrás de cada proceso automatizado tiene que haber alguien que dé la cara.`
-3. T1 · `Cada respuesta cuesta menos. La factura total crece. Las dos cosas son ciertas a la vez.`
+1. T1 · `La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja.`
+2. T1 · `Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada.`
+3. T1 · `Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez.`
 4. T2 · Question: `¿Puede la dirección decirnos qué no va a hacer este año con la IA, quién puede frenar un proyecto y qué dato nos va a traer?` Answer: `Si no, el consejo todavía no supervisa la IA.`
 5. T2 · Question: `¿Cuántos de sus pilotos de IA tienen fecha para ampliarse o cerrarse?` Answer: `Un piloto sin fecha es la forma más cara de aplazar una decisión.`
 
@@ -532,7 +532,7 @@ All copy is in Spanish and final. Do not change it. Where several variants are g
 
 1. T1 · `Supervisar la IA sin ser técnico. Seis decisiones que un consejo no puede delegar.`
 2. T2 · Question: `¿Quién puede parar un sistema de IA mañana en su empresa?` Answer: `Si nadie sabe el nombre, no hay gobierno.`
-3. T2 · Question: `¿Qué dato de valor llega al consejo, y quién responde de él?` Answer: `Los datos de uso son para la dirección. Al consejo le llega el valor.`
+3. T2 · Question: `¿Qué dato de valor llega al consejo, y quién responde de él?` Answer: `Los datos de uso son para la dirección; al consejo le llega el valor.`
 4. T1 · `Dieciocho afirmaciones, cinco minutos. Autoevaluación gratuita para consejos.`
 
 **X3 · X header** (Template 5, 1500 × 500).
@@ -544,7 +544,7 @@ LinkedIn, launch post (with L2 carousel):
 ```
 He escrito una guía breve para consejeros sobre cómo supervisar la IA sin ser técnico.
 
-No explica la tecnología. Explica qué exigir a la dirección: seis decisiones que un consejo no puede delegar, qué pedir en las tres próximas reuniones y una autoevaluación de dieciocho afirmaciones.
+Explica qué exigir a la dirección, no la tecnología: seis decisiones que un consejo no puede delegar, qué pedir en las tres próximas reuniones y una autoevaluación de dieciocho afirmaciones.
 
 Es gratuita. El enlace está en el primer comentario.
 ```
@@ -554,7 +554,7 @@ LinkedIn, self-assessment post (with L1 statement 4):
 ```
 Dieciocho afirmaciones, cinco minutos.
 
-El resultado no da una nota. Dice qué decisiones puntúan cero, que es lo único que importa para la próxima reunión del consejo.
+En vez de una nota, el resultado dice qué decisiones puntúan cero, que es lo único que importa para la próxima reunión del consejo.
 
 Autoevaluación gratuita para consejos, en el primer comentario.
 ```
@@ -566,7 +566,7 @@ X thread (four tweets, one image each, images X2-1 to X2-4):
 
 2/ Primera prueba: ¿quién puede parar un sistema de IA mañana en su empresa? Si nadie sabe el nombre, no hay gobierno.
 
-3/ Segunda: ¿qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección. Al consejo le llega el valor.
+3/ Segunda: ¿qué dato de valor llega al consejo, y quién responde de él? Los datos de uso son para la dirección; al consejo le llega el valor.
 
 4/ Hay una autoevaluación de dieciocho afirmaciones. Cinco minutos. Dice qué decisiones puntúan cero. [URL]
 ```
