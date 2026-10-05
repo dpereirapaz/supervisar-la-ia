@@ -150,7 +150,7 @@ List:
 
 Section title: `Sobre el autor`
 
-Text: `David Pereira Paz es ingeniero de Telecomunicación y ha cursado programas de alta dirección y para consejeros en IESE y ESADE. Dirige el área global de Datos e Inteligencia Artificial de una consultora tecnológica internacional, es profesor en ISDI y The Valley, miembro del consejo asesor del Observatorio de Ética en Inteligencia Artificial de Cataluña y miembro fundador del consejo editorial de la revista AI and Ethics (Springer Nature). Este material nace de sus sesiones con directivos. Las opiniones son exclusivamente suyas.`
+Text: `David Pereira Paz es ingeniero de Telecomunicación y ha cursado programas de alta dirección y para consejeros en IESE y ESADE. Dirige el área global de Datos e Inteligencia Artificial de SEIDOR, es profesor en ISDI y The Valley, miembro del consejo asesor del Observatorio de Ética en Inteligencia Artificial de Cataluña y miembro fundador del consejo editorial de la revista AI and Ethics (Springer Nature). Este material nace de sus sesiones con directivos. Las opiniones son exclusivamente suyas.`
 
 Note to builder: do not add a photograph unless the author supplies the file `author.jpg`.
 
