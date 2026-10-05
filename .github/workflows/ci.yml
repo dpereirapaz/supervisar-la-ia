@@ -1,0 +1,24 @@
+name: Pruebas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Sin PDF ni .env en el repositorio (A-06, AR-10)
+        run: |
+          if git ls-files | grep -Ei '\.pdf$|(^|/)\.env$'; then echo "Hay ficheros prohibidos"; exit 1; fi

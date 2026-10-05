@@ -1,5 +1,6 @@
 User-agent: *
-Disallow: /supervisar-la-ia/gracias/
+Disallow: /gracias/
+Disallow: /error/
 Allow: /
 
 Sitemap: https://dpereirapaz.github.io/supervisar-la-ia/sitemap.xml
