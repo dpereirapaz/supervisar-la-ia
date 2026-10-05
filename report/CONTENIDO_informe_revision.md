@@ -13,37 +13,37 @@
 
 **Lectura del consejo.** Dónde está su compañía en las seis decisiones y qué hacer en los primeros cien días
 
-**Cómo leer este documento.** Este documento resume sus respuestas a la autoevaluación del consejo, ordenadas con los criterios del whitebook «Supervisión de la IA. Seis decisiones que un consejo no puede delegar». No es una auditoría: nadie ha comprobado lo que usted ha respondido, y la lectura vale lo que valgan esas respuestas. Tampoco compara su compañía con otras. Más que la suma, interesan tres cosas: qué decisiones puntúan cero, qué afirmaciones son ciertas pero nadie podría demostrar, y cuánto cambia el resultado cuando el consejo repita el ejercicio dentro de un año.
+**Cómo leer este documento.** Este documento resume sus respuestas a la autoevaluación del consejo, ordenadas con los criterios del whitebook «Supervisión de la IA. Seis decisiones que un consejo no puede delegar». Nadie ha comprobado lo que usted ha respondido, así que la lectura vale lo que valgan esas respuestas, y no compara su compañía con otras. Más que la suma, interesan tres cosas: qué decisiones puntúan cero, qué afirmaciones son ciertas pero nadie podría demostrar, y cuánto cambia el resultado cuando el consejo repita el ejercicio dentro de un año.
 
 ## Lectura global
 
 ### Una base sólida que hay que mantener  `base_solida`
 
-Sus respuestas describen un consejo que supervisa la IA de verdad: hay decisiones tomadas, responsables y documentos que lo prueban. Lo que queda es menos vistoso y más difícil: que no se oxide. Las seis decisiones caducan, porque el mercado y la tecnología se mueven más deprisa que cualquier plan. Conviene pasar de comprobar que existen a comprobar que se revisan, y contrastar sus respuestas con documentos y no con impresiones.
+Sus respuestas describen un consejo que supervisa la IA de verdad: hay decisiones tomadas, responsables y documentos que lo prueban. Ahora el trabajo es mantenerlas al día, porque el mercado y la tecnología cambian más deprisa que cualquier plan y una decisión de hace dos años puede no servir hoy. Pida que cada decisión tenga fecha de revisión y que las respuestas con un 3 se apoyen en documentos.
 
 **Lo primero que haría:** Fije la fecha de la revisión anual de las seis decisiones y pida los documentos que respaldan las afirmaciones que ha puntuado con un 3.
 
 ### Un punto de partida  `punto_de_partida`
 
-Su compañía está donde está casi cualquier empresa: la IA se usa, pero el consejo todavía no tiene forma de saber cuánta, de pararla ni de medir lo que aporta. No es un juicio sobre la dirección. Lo habitual es que la IA haya entrado por abajo, por iniciativa de equipos y personas, antes de que nadie la decidiera arriba. Por ahora no hace falta una estrategia completa. Bastan tres cosas pequeñas: saber qué hay, saber quién puede pararlo y saber qué se ha decidido no hacer.
+Su compañía está donde está casi cualquier empresa: la IA se usa, pero el consejo todavía no tiene forma de saber cuánta, de pararla ni de medir lo que aporta. Suele pasar porque la IA entró por iniciativa de equipos concretos antes de que nadie la decidiera arriba, y eso no dice nada malo de la dirección. Para empezar no hace falta una estrategia completa. Basta con conocer qué sistemas hay, quién puede pararlos y qué se ha decidido no hacer.
 
 **Lo primero que haría:** Pida el inventario de sistemas, el nombre de quien puede detener cualquiera de ellos y la lista de lo que la dirección ha decidido no hacer.
 
 ### La actividad va por delante de la supervisión  `actividad_por_delante`
 
-Sus respuestas describen una compañía que hace más de lo que el consejo puede ver. Hay pilotos, plataformas o equipos que funcionan, pero las decisiones de dirección (qué se prioriza, quién responde, qué dato llega al consejo) van por detrás. Es una situación frecuente y reversible, pero con un riesgo concreto: que el consejo se entere de un problema por la prensa o por un cliente y no por un informe. No hace falta frenar la actividad; basta con que la supervisión la alcance.
+Sus respuestas describen una compañía que hace más de lo que el consejo puede ver. Hay pilotos, plataformas o equipos que funcionan, pero las decisiones de dirección (qué se prioriza, quién responde, qué dato llega al consejo) van por detrás. Es frecuente y tiene arreglo. El riesgo es que el consejo se entere de un problema por la prensa o por un cliente antes que por un informe. Basta con que la supervisión alcance a lo que ya funciona, sin frenarlo.
 
 **Lo primero que haría:** Pida que todo lo que ya funciona quede inventariado, con un responsable y una fecha de revisión.
 
 ### La intención va por delante de la ejecución  `intencion_por_delante`
 
-El consejo y la dirección parecen tener claro qué quieren y quién responde, pero el paso al trabajo diario todavía no está hecho: pilotos sin cierre, tecnología difícil de cambiar o un uso que depende de pocas personas. Es una buena base, porque las decisiones de arriba ya existen. El riesgo es que se queden en papel. Conviene llevar cada decisión a una fecha, un responsable y un resultado que el consejo pueda ver.
+El consejo y la dirección parecen tener claro qué quieren y quién responde, pero el paso al trabajo diario todavía no está hecho: pilotos sin cierre, tecnología difícil de cambiar o un uso que depende de pocas personas. Las decisiones de arriba ya existen, y eso es una buena base, aunque pueden quedarse en papel si nadie las baja a fechas y responsables. El consejo debería ver, para cada una, quién la ejecuta, cuándo y con qué resultado.
 
 **Lo primero que haría:** Pida un calendario con fecha y responsable para cada piloto y para el paso a producción.
 
 ### Un avance desigual  `avance_desigual`
 
-Su compañía tiene decisiones tomadas y otras sin tocar, y no hay un patrón claro entre dirección y ejecución. Es la situación de quien ha avanzado donde había urgencia o alguien con iniciativa. Conviene mirar con más atención las decisiones que puntúan más bajo, porque son las que el consejo no está supervisando, y comprobar que lo que está bien está también documentado.
+Su compañía tiene decisiones tomadas y otras sin tocar, y no hay un patrón claro entre dirección y ejecución. Suele ocurrir cuando se avanza donde apretaba la urgencia o donde alguien tomó la iniciativa. Las decisiones con menos puntos son las que el consejo no está supervisando; conviene empezar por ellas y, de paso, pedir que lo que ya funciona quede documentado.
 
 **Lo primero que haría:** Empiece por la decisión que puntúa más bajo y pida que lo que ya está bien quede por escrito.
 
@@ -52,10 +52,10 @@ Su compañía tiene decisiones tomadas y otras sin tocar, y no hay un patrón cl
 Estas combinaciones de respuestas no suelen darse a la vez. No tienen por qué ser un error. Es donde conviene pedir pruebas.
 
 - **I1** (afirmación 5 ≥ 2 y afirmación 4 ≤ 1): Dice que una persona puede detener cualquier sistema de IA, pero no hay un inventario completo. Si no se sabe qué sistemas hay, esa autoridad no puede ejercerse sobre todos.
-- **I2** (afirmación 11 ≥ 2 y afirmación 10 ≤ 1): Al consejo llega un dato de valor, pero no se registró un punto de partida. Sin él, el dato no demuestra ninguna mejora: es solo una cifra.
+- **I2** (afirmación 11 ≥ 2 y afirmación 10 ≤ 1): Al consejo llega un dato de valor, pero no se registró un punto de partida. Sin él, el dato no permite saber si algo ha mejorado.
 - **I3** (afirmación 8 ≥ 2 y afirmación 10 ≤ 1): Se acuerda el criterio de valor antes de cada piloto, pero no se registra el punto de partida. Un criterio sin línea de base no puede evaluarse.
-- **I4** (afirmación 9 ≥ 2 y afirmación 7 ≤ 1): Existe un camino estable a producción, pero los pilotos no tienen fecha para ampliarse o cerrarse. El camino existe, pero nada obliga a recorrerlo.
-- **I5** (afirmación 13 ≥ 2 y afirmación 14 ≤ 1): Afirma que cambiar de proveedor no obligaría a rehacer sistemas, pero no hay una batería de casos reales que lo compruebe. Es una creencia, no una prueba.
+- **I4** (afirmación 9 ≥ 2 y afirmación 7 ≤ 1): Existe un camino estable a producción, pero los pilotos no tienen fecha para ampliarse o cerrarse. Sin fecha de cierre, ningún piloto está obligado a pasar por ese camino.
+- **I5** (afirmación 13 ≥ 2 y afirmación 14 ≤ 1): Afirma que cambiar de proveedor no obligaría a rehacer sistemas, pero no hay una batería de casos reales que lo compruebe. Mientras no se pruebe con casos propios, la afirmación está sin verificar.
 - **I6** (afirmación 1 ≥ 2 y afirmación 3 ≤ 1): Los usos se priorizan sin haber analizado antes si la IA cambia lo que la compañía vende. Puede que se esté optimizando algo que el cliente dejará de pagar.
 
 ## Decisiones
@@ -66,8 +66,8 @@ Estas combinaciones de respuestas no suelen darse a la vez. No tienen por qué s
 Está tomada cuando la dirección sabe decir qué no hará este año y explicar el motivo.
 
 - **Por decidir.** Todavía no hay una elección explícita de por dónde empezar. Sin ella, la IA se prioriza por quién insiste más y no por valor, riesgo y viabilidad. Tampoco se sabe qué se ha descartado, que es lo que más dice de una estrategia.
-- **A medias.** Hay una parte de la elección hecha, pero no está completa o no está por escrito. Es frecuente que exista una lista de usos sin criterio común, o que se sepa qué se quiere hacer pero no qué se descarta. Una lista sin descartes es un deseo, no una prioridad.
-- **Decidida.** El consejo sabe dónde se concentra el esfuerzo y por qué, y la dirección es capaz de decir qué no hará este año. Queda mantenerla viva: una priorización caduca cuando cambia el mercado, y la que no se revisa deja de ser una decisión.
+- **A medias.** Hay una parte de la elección hecha, pero no está completa o no está por escrito. Es frecuente que exista una lista de usos sin criterio común, o que se sepa qué se quiere hacer pero no qué se descarta. Mientras no haya descartes, la lista no prioriza nada.
+- **Decidida.** El consejo sabe dónde se concentra el esfuerzo y por qué, y la dirección es capaz de decir qué no hará este año. La priorización caduca cuando cambia el mercado, así que conviene revisarla al menos una vez al año.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -94,9 +94,9 @@ Está tomada cuando la dirección sabe decir qué no hará este año y explicar 
 *Si mañana hubiera que parar un sistema, ¿quién lo haría, y lo sabe toda la organización?*  
 Está tomada cuando hay una persona concreta que puede detener cualquier sistema y todo el mundo sabe quién es.
 
-- **Por decidir.** Hoy no hay una persona con autoridad clara para detener un sistema de IA, o nadie sabe quién es, y probablemente tampoco hay un inventario completo de lo que se usa. Gobernar exige que alguien pueda frenar un proyecto un martes por la tarde; aprobar una política no basta. Es la decisión que más conviene cerrar primero, porque los riesgos no esperan a que madure el uso.
-- **A medias.** Hay elementos de gobierno, pero todavía no forman un mecanismo que funcione sin depender de las buenas intenciones. Suele faltar una de tres cosas: el inventario completo (incluido lo que la plantilla usa por su cuenta), la clasificación por riesgo o el nombre de quien puede parar un sistema.
-- **Decidida.** Hay un inventario, una persona con autoridad para detener cualquier sistema y una clasificación por riesgo. Lo siguiente es comprobar que funciona: pedir un simulacro, es decir, que la organización demuestre cuánto tardaría en parar un sistema real.
+- **Por decidir.** Hoy no hay una persona con autoridad clara para detener un sistema de IA, o nadie sabe quién es, y probablemente tampoco hay un inventario completo de lo que se usa. Una política aprobada no sirve de mucho si nadie tiene autoridad para frenar un proyecto mañana mismo. Conviene cerrar esta decisión antes que las demás, porque los riesgos aparecen aunque el uso esté empezando.
+- **A medias.** Hay elementos de gobierno, pero todavía no forman un mecanismo que funcione sin depender de las buenas intenciones. Lo que más a menudo falta es el inventario completo, incluido lo que la plantilla usa por su cuenta. También puede faltar la clasificación por riesgo o el nombre de quien puede parar un sistema.
+- **Decidida.** Hay un inventario, una persona con autoridad para detener cualquier sistema y una clasificación por riesgo. Para saber si funciona, pida un simulacro y que la organización mida cuánto tarda en parar un sistema real.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -123,9 +123,9 @@ Está tomada cuando hay una persona concreta que puede detener cualquier sistema
 *¿Qué pilotos tienen fecha para ampliarse o para cerrarse, y con qué criterio?*  
 Está tomada cuando cada piloto nace con una fecha acordada para extenderlo o abandonarlo en función de un indicador de valor concreto y medible.
 
-- **Por decidir.** Los pilotos nacen sin fecha de cierre ni criterio de valor acordado. Es la forma más cara de aplazar una decisión: el piloto ni fracasa ni triunfa, simplemente continúa, y consume atención y presupuesto. Tampoco hay una forma estable de llevar un sistema a producción.
+- **Por decidir.** Los pilotos nacen sin fecha de cierre ni criterio de valor acordado. Es la forma más cara de aplazar una decisión, porque el piloto sigue abierto sin fracasar ni triunfar y consume atención y presupuesto. Tampoco hay una forma estable de llevar un sistema a producción.
 - **A medias.** Algunos pilotos tienen fecha o criterio, otros no. Hay una forma de pasar a producción, pero depende de quién empuje. Para que sea una decisión, cada piloto tiene que nacer con un indicador de valor y con una fecha para ampliarse o cerrarse.
-- **Decidida.** Cada piloto nace con un criterio de valor y una fecha para ampliarse o cerrarse, y existe un camino estable a producción con responsables. Conviene comprobar que los cierres se cumplen: lo que demuestra que esta decisión está tomada es que se haya cerrado algún piloto.
+- **Decidida.** Cada piloto nace con un criterio de valor y una fecha para ampliarse o cerrarse, y existe un camino estable a producción con responsables. La mejor prueba de que funciona es que se haya cerrado algún piloto en el último año.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -152,9 +152,9 @@ Está tomada cuando cada piloto nace con una fecha acordada para extenderlo o ab
 *¿Qué dato nos vais a traer, y quién responde de él?*  
 Está tomada cuando al consejo llega un dato de impacto en generación de valor en la cuenta de resultados y hay alguien que responde de él.
 
-- **Por decidir.** Al consejo no llega ningún dato de valor, o llega solo actividad: licencias, usuarios, consultas. Sin un punto de partida registrado antes de empezar, cualquier cifra posterior será una impresión. Cuánta gente usa una herramienta es un dato para la dirección; el consejo necesita saber qué cambia en la cuenta de resultados.
-- **A medias.** Se mide algo, pero falta una de tres condiciones: un punto de partida previo, un responsable que dé la cara por el dato, o la separación entre los indicadores de uso (para la dirección) y los de valor (para el consejo).
-- **Decidida.** Llega al consejo un dato de valor con responsable y con línea de partida. Falta comprobar que ningún indicador de uso se ha convertido en objetivo: en cuanto se exige desde arriba, deja de ser fiable.
+- **Por decidir.** Al consejo no llega ningún dato de valor, o solo llegan cifras de actividad, como licencias o usuarios. Sin un punto de partida registrado antes de empezar, cualquier cifra posterior será una impresión. Cuánta gente usa una herramienta es un dato para la dirección; el consejo necesita saber qué cambia en la cuenta de resultados.
+- **A medias.** Se mide algo, pero falta un punto de partida previo, un responsable que dé la cara por el dato o la separación entre indicadores de uso, que son para la dirección, y de valor, que son para el consejo.
+- **Decidida.** Llega al consejo un dato de valor con responsable y con línea de partida. Compruebe que ningún indicador de uso se ha convertido en objetivo, porque en cuanto se exige desde arriba deja de ser fiable.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -181,9 +181,9 @@ Está tomada cuando al consejo llega un dato de impacto en generación de valor 
 *Si mañana tuviéramos que cambiar de proveedor, ¿cuánto tardaríamos y cuánto nos costaría?*  
 Está tomada cuando cambiar de proveedor es una decisión de gestión y no obliga a rehacer sistemas.
 
-- **Por decidir.** Cambiar de proveedor de modelos obligaría hoy a rehacer sistemas, y no hay forma de comprobar que un cambio no empeora lo que funciona. La dependencia no es un problema mientras no se nota: se nota cuando el proveedor sube el precio, cambia el modelo o deja de ofrecerlo.
-- **A medias.** Hay avances en independencia del proveedor, pero no están probados. Es habitual afirmar que se puede cambiar sin haberlo comprobado. Una batería de casos reales, repetida antes de cada cambio de modelo, convierte la afirmación en algo demostrable.
-- **Decidida.** Cambiar de proveedor es una decisión de gestión y existe una forma de comprobar que el cambio no rompe nada. Queda revisar los procesos más delicados: dónde está el umbral de confianza y quién recibe el caso cuando el sistema duda.
+- **Por decidir.** Cambiar de proveedor de modelos obligaría hoy a rehacer sistemas, y no hay forma de comprobar que un cambio no empeora lo que funciona. La dependencia se nota el día en que el proveedor sube el precio o retira el modelo que usa la compañía.
+- **A medias.** Hay avances en independencia del proveedor, pero no están probados. Es habitual afirmar que se puede cambiar sin haberlo comprobado. Con una batería de casos reales que se repita antes de cada cambio de modelo, la afirmación se puede demostrar.
+- **Decidida.** Cambiar de proveedor es una decisión de gestión y existe una forma de comprobar que el cambio no rompe nada. En los procesos más delicados, revise dónde está el umbral de confianza y quién recibe el caso cuando el sistema duda.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -212,7 +212,7 @@ Está tomada cuando el uso se mantiene aunque cambien las personas que lo pusier
 
 - **Por decidir.** El uso de la IA depende de unas pocas personas y no hay medidas documentadas de formación o alfabetización. Si esas personas se van, el uso se va con ellas. Tampoco hay un plan para formar a los expertos del futuro si dejan de entrar perfiles júnior.
 - **A medias.** Hay formación y entusiastas, pero el uso todavía no está desligado de las personas que lo impulsaron, o la formación no puede acreditarse. Conviene poder demostrar qué se ha hecho, a quién y cuándo.
-- **Decidida.** El uso se mantiene aunque cambien las personas, la formación está documentada y hay un plan para los expertos del futuro. Queda la parte lenta: asegurar que, si dejan de entrar perfiles júnior, habrá quien forme a los expertos de dentro de cinco años.
+- **Decidida.** El uso se mantiene aunque cambien las personas, la formación está documentada y hay un plan para los expertos del futuro. Lo más lento es preparar a quien formará a los expertos dentro de cinco años si dejan de entrar perfiles júnior.
 
 **Qué conviene comprobar, según la respuesta:**
 
@@ -236,7 +236,7 @@ Está tomada cuando el uso se mantiene aunque cambien las personas que lo pusier
 
 ## Cien días
 
-El plan de implantación es de la dirección; la agenda es del consejo. Lo que sigue no es un plan maestro, porque un consejo que escribe el plan de la dirección deja de supervisarlo. Son tres reuniones en cien días, con un encargo claro en cada una. La agenda base es la misma para cualquier compañía. Lo que cambia con su resultado es dónde poner el peso.
+El plan de implantación es de la dirección; la agenda es del consejo. Lo que sigue no es un plan maestro, porque un consejo que escribe el plan de la dirección deja de supervisarlo. Son tres reuniones en cien días, con un encargo claro en cada una. La agenda base sirve para cualquier compañía; su resultado indica dónde poner el peso.
 
 - **Primera reunión: pedir** (Días 0 a 30). Agenda base: El inventario de sistemas de IA en uso, incluido el que la plantilla usa por su cuenta. El mapa de pilotos con su fecha de ampliación o cierre. El análisis de mercado del capítulo 4 del whitebook. El nombre de quien puede parar un sistema. *El consejo sale con:* Un encargo escrito a la dirección, con fecha de entrega para la segunda reunión.
 - **Segunda reunión: decidir** (Días 30 a 70). Agenda base: Las seis decisiones, cada una con responsable y fecha. El techo de inversión en IA del ejercicio. El criterio de cierre de los pilotos abiertos. El modelo de precio y oferta, si el análisis de mercado lo exige. *El consejo sale con:* Un acta con seis responsables, seis fechas y una cifra de inversión.
@@ -255,11 +255,11 @@ El plan de implantación es de la dirección; la agenda es del consejo. Lo que s
 
 ## Registro y cierre
 
-Este es el registro de lo que usted respondió. Conserve la fecha, quién ha puntuado y los documentos que sustentan cada respuesta de 2 o 3: es el primer registro de supervisión de la IA que tendrá la compañía.
+Este es el registro de lo que usted respondió. Si conserva la fecha, quién ha puntuado y los documentos que sustentan cada respuesta de 2 o 3, la compañía tendrá su primer registro de supervisión de la IA.
 
-Este documento es una lectura de sus propias respuestas, ordenada con los criterios del whitebook. No es una auditoría, no compara su compañía con otras y no constituye asesoramiento jurídico ni financiero. Nadie ha comprobado lo que usted ha respondido: la lectura vale lo que valgan esas respuestas.
+Esta lectura no es una auditoría ni asesoramiento jurídico o financiero. Antes de decidir nada con ella, conviene contrastar cada respuesta con los documentos que la sustentan.
 
-Repita la autoevaluación dentro de un año. La distancia entre los dos resultados es lo que mide el avance.
+Repita la autoevaluación dentro de un año. Comparar los dos resultados le dirá cuánto ha avanzado el consejo.
 
 Si quiere trabajar este resultado con su consejo, en una sesión o en una evaluación con documentos, escriba a {contacto}.
 
