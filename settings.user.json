@@ -1,0 +1,35 @@
+{
+  "model": "fable",
+  "permissions": {
+    "defaultMode": "auto",
+    "deny": [
+      "Bash(rm -rf /*)",
+      "Bash(git push --force *)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)"
+    ]
+  },
+  "autoMode": {
+    "environment": [
+      "$defaults",
+      "Organization: David Pereira Paz, personal project. Primary use: building a static website with one serverless function for the whitebook 'Supervisión de la IA'.",
+      "Source control: github.com/dpereirapaz and all repos under it. Pushes to main of these repos are routine commits of a personal project; Netlify publishes only after the author connects the repository.",
+      "Trusted internal domains: fonts.googleapis.com, fonts.gstatic.com, localhost.",
+      "The Brevo API (api.brevo.com) is NOT used during the build. Tests mock it. No real e-mail is sent during the build.",
+      "Repository visibility: the website repository is public; it must contain no PDF, no .env file, no secret and no personal data."
+    ],
+    "allow": [
+      "$defaults",
+      "Installing npm packages needed by the build (playwright, pdf-lib, @pdf-lib/fontkit, netlify-cli as a dev dependency) is allowed.",
+      "Running headless Chromium through Playwright to render PNG files is allowed.",
+      "Running `netlify dev --offline` and calling localhost with curl is allowed.",
+      "Running pdftoppm and pdftotext on generated test PDFs is allowed."
+    ],
+    "soft_deny": [
+      "$defaults",
+      "Never commit a .pdf file or a .env file to the website repository.",
+      "Never call api.brevo.com or any real mail API, and never send an e-mail.",
+      "Never print or commit the value of an environment variable that holds a secret."
+    ]
+  }
+}
