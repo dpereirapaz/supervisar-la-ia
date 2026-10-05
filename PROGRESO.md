@@ -70,7 +70,6 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 
 ### Otros pendientes
 
-10. **Anexo B o D** en el JSON del informe y en el whitebook (ver BLOCKERS.md).
 11. Fecha de publicación del whitebook en el JSON-LD de `index.html` (`datePublished`).
 12. URL de los activos sociales en `social/manifest.json` y `node social/render.mjs`.
 13. Opcional: `assets/img/author.jpg` (800 × 800).
