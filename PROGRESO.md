@@ -14,37 +14,64 @@ Los subagentes `qa`, `security-reviewer`, `designer` y `web-developer` se bloque
 | 8 | `sitemap.xml`, `robots.txt`, `404.html` | hecho | 0dc16c2 |
 | 9 | `deploy.yml` y `netlify.toml` | hecho | d7a7504 |
 | 10 | Plantillas sociales y render (sección 13) | hecho | 1fe467b |
-| 11 | Comprobaciones 11 y 13.6, commit y push | hecho | (este commit) |
+| 11 | Comprobaciones 11 y 13.6, commit y push | hecho | 2f95844 |
 
-## Comprobaciones de la sección 11 (ejecutadas el 2026-10-03 en local)
+## Versión 1.2 y anexo del informe personalizado (2026-10-05)
+
+El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f del anexo y se rehacen los pasos 9 y 11. Los subagentes no se usan: en esta máquina se bloquean (ver DECISIONS.md), y el orquestador hace el trabajo y las revisiones de `qa`, `security-reviewer` y `copy-editor`.
+
+| Paso | Descripción | Estado | Commit |
+|---|---|---|---|
+| 6a | `report/` integrado; `npm test` con las 9 pruebas de referencia | hecho | f4d1910 |
+| 6b | Función `/api/informe`, `lib/` y 17 pruebas con Brevo simulado | hecho | 343d4dd |
+| 6c | Formularios R-01, copy C-10/C-11, script R-02, `/error/`, `/gracias/` | hecho | ver `git log` |
+| 6d | Páginas legales (sección 10), `netlify.toml`, `.env.example`, sin Formspree | hecho | ver `git log` |
+| 6e | Cinco perfiles generados con la función, revisados como PNG; corrección de portada (R-18) | hecho | ver `git log` |
+| 9 | `ci.yml`; eliminado `deploy.yml` | hecho | ver `git log` |
+| 6f / 11 | Comprobaciones AR-01 a AR-12 y sección 11 | hecho | ver `git log` |
+
+## Comprobaciones (2026-10-05, en local con `netlify dev --offline` y `DELIVERY_MODE=download`)
 
 | Id | Resultado | Evidencia |
 |---|---|---|
-| A-01 | PASA | `npm run check:html`: 0 errores en las 8 páginas (html-validate) |
-| A-02 | PASA | `npm run check:lighthouse` (móvil): `/` 99/100/100/100, `/autoevaluacion/` 99/100/100/100 |
-| A-03 | PASA | `scripts/check.mjs`: landing completa sin JS; formulario enviado sin JS y redirigido a `/gracias/` (POST interceptado) |
-| A-04 | PASA en local | `scripts/check.mjs`: el POST lleva `origen`, `puntuacion_total`, `puntuacion_grupos`, `fecha` y `a1`…`a18`. Pendiente de repetir contra Formspree real cuando exista el endpoint |
-| A-05 | PENDIENTE | Requiere cuenta de Formspree, endpoint y respuesta automática con el enlace del PDF |
-| A-06 | PASA | `find -iname '*.pdf'`: solo `social/out/linkedin-carousel.pdf` (activo social, no el whitebook) |
-| A-07 | PASA | `scripts/check.mjs`: 0 px de desbordamiento a 360, 768 y 1440 px en 4 páginas |
-| A-08 | PASA | `scripts/check.mjs`: autoevaluación completada y formulario rellenado solo con teclado |
-| A-09 | PASA | Sin `lorem` ni `TODO`; `[__]` solo en páginas legales, `datePublished`, `action` de los formularios y URL de los activos sociales |
-| A-10 | PASA | `scripts/check.mjs`: 0 peticiones a terceros al cargar `/`, `/autoevaluacion/`, `/whitebook/` |
-| S-11 | PASA | Revisión visual de los PNG; afirmaciones a 92/80 px legibles al 25 % |
-| S-12 | PASA | Márgenes de 80 px (96 px en 1600/1584/1500 de ancho, > 6 %); cabeceras dentro de la franja central del 70 % |
-| S-13 | PASA | `linkedin-carousel.pdf`: 7 páginas 1080 × 1350 en secuencia |
-| S-14 | PASA | `cmp assets/img/og-image.png social/out/linkedin-link-cover.png`: idénticos |
-| S-15 | PASA | `alt.json`: 22 entradas, todas ≤ 120 caracteres, una por PNG |
-| Copy | PASA | Los 72 literales de la sección 5 y los 14 de 13.5 aparecen tal cual en las páginas y activos |
-| Seguridad | PASA | Sin .pdf/.docx/.env/credenciales en git; honeypot `_gotcha` oculto por CSS; privacidad obligatoria, comunicaciones opcional y desmarcada; CSP exacta en `netlify.toml`; `robots.txt` excluye `/gracias/`; solo LinkedIn abre en nueva pestaña con `rel="noopener"` |
+| A-01 | PASA | `npm run check:html`: 0 errores en 9 páginas |
+| A-02 / AR-08 | PASA | Lighthouse móvil: `/` y `/autoevaluacion/` 99/100/100/100; `autoevaluacion.js` 3,7 KB (≤ 12 KB) |
+| A-03 / AR-04 | PASA | Sin JS: landing completa; whitebook → `303 /gracias/`; fallo → `303 /error/`; autoevaluación → PDF (modo download) |
+| A-04 / AR-03 | PASA | `curl`: 200 PDF; 17 respuestas 422; valor 4 → 422; correo inválido 400; sin consentimiento 400; `_gotcha` 200 sin PDF; 20 KB 413; GET 405; sexta petición 429; producción + download 503 (prueba unitaria) |
+| A-05 | PENDIENTE | Lo hace el autor en producción (AR-13) |
+| A-06 / AR-10 | PASA | `git ls-files`: ningún `.pdf` ni `.env` |
+| A-07 | PASA | 0 px de desbordamiento a 360, 768 y 1440 px en 5 páginas |
+| A-08 | PASA | Autoevaluación y formulario completados solo con teclado |
+| A-09 | PASA | Sin `lorem` ni `TODO`; `[__]` en páginas legales, `datePublished` y plantillas sociales (pendientes del autor) |
+| A-10 / AR-09 | PASA | 0 peticiones a terceros al cargar 5 páginas y al enviar la autoevaluación |
+| AR-01 | PASA | `npm test`: 9 pruebas de referencia + 17 de la función |
+| AR-02 | PASA | 5 perfiles + nombres largos: 9 a 11 páginas A4, 45–49 KB, sin páginas casi vacías; PNG revisados |
+| AR-05 | PASA | Registros sin nombre, correo, `@`, IP ni respuestas (prueba unitaria y log de `netlify dev`) |
+| AR-06 | PASA | Sin `\uFFFD`, `undefined`, `NaN`, `{`, `[__]`, `null`; `[fecha]` una vez; los tres estados y las tildes presentes |
+| AR-07 | PASA | Nombre y organización de 80 caracteres dentro de la página (tras corregir `render-pdf.mjs`) |
+| AR-11 | PASA | `netlify dev`: CSP de T-11, `nosniff`, `Referrer-Policy`, `Permissions-Policy`; `/api/informe` con `Cache-Control: no-store` |
+| AR-12 | PASA | Sin `deploy.yml` ni menciones de Formspree o Web3Forms en código, configuración, README ni CSP |
+| AR-13 | PENDIENTE | Lo hace el autor en producción |
+| R-15 | PASA | Metadatos: título, autor y `es-ES`; sin datos del lector |
 
-## Pendiente del autor antes de publicar
+## Pendiente del autor
 
-1. **Formspree**: endpoint `https://formspree.io/f/xyekygrz` conectado en los dos formularios (2026-10-05). Falta confirmar el formulario desde el correo de activación de Formspree.
-2. **Respuesta automática**: en Formspree (Settings → Autoresponse) incluir el enlace privado del PDF (Drive/Dropbox). El PDF no debe subirse al repositorio.
-3. **Datos legales** en `privacidad/`, `cookies/` y `aviso-legal/`: nombre completo, NIF, dirección postal, correo de contacto (aparece dos veces en privacidad: responsable y ejercicio de derechos) y fecha de última actualización.
-4. **Fecha de publicación** del whitebook en el JSON-LD `Book` de `index.html` (`datePublished`).
-5. **URL de los activos sociales**: sustituir `"url": "[__]"` en todas las entradas de `social/manifest.json` (y en los JSON de `social/templates/*.html` si se editan a mano) y ejecutar `node social/render.mjs`. Esto regenera también `assets/img/og-image.png`.
-6. **Opcional**: `assets/img/author.jpg` (800 × 800). Si se añade, incorporar la imagen en la sección «Sobre el autor» y renderizar la plantilla `author.html` (fijando antes la cita del whitebook, que SPEC.md no concreta).
-7. **Opcional**: dominio propio. Si se configura, cambiar la URL en `canonical`/Open Graph/`sitemap.xml`/`_next`, el prefijo `/supervisar-la-ia/` de `404.html` y la ruta de `robots.txt`.
-8. **Cabeceras de perfil** (L4, X3): el texto va a 56/64 px en lugar de 72 px para caber en la franja segura; subir los tamaños en `social/manifest.json` si se acorta el copy.
+### Anexo, sección 15 (antes de publicar)
+
+1. **Dominio.** Comprarlo, apuntarlo a Netlify y activar HTTPS. Poner la URL en `SITE_URL` y `SITE_HOST`. Sustituir `https://dpereirapaz.github.io/supervisar-la-ia/` por la URL final en `canonical`, Open Graph, `sitemap.xml` y `robots.txt` de todas las páginas.
+2. **Netlify.** Crear el sitio desde el repositorio `dpereirapaz/supervisar-la-ia` y definir las variables de entorno de la sección 11 (ver README). Comprobar que Netlify Blobs está disponible (límite de solicitudes, R-12).
+3. **Brevo.** Crear la cuenta, autenticar el dominio (SPF, DKIM, DMARC), crear la clave de API (`BREVO_API_KEY`), desactivar el seguimiento de aperturas y clics y revisar límites y marca del plan gratuito. Opcional: lista para `BREVO_LIST_ID`.
+4. **Direcciones.** `MAIL_FROM` (en el dominio, no Gmail ni Outlook), `MAIL_REPLY_TO`, `AUTHOR_EMAIL`, `CONTACT_EMAIL`. Sustituir `[correo de contacto]` en `error/index.html` y en `data-error` de `autoevaluacion/index.html`.
+5. **Enlace del whitebook.** Enlace privado al PDF definitivo (no al .docx) en `WHITEBOOK_URL`.
+6. **Revisión jurídica.** Privacidad, cookies y aviso legal están marcados `[__] Revisión jurídica pendiente`: encargados (Netlify, Brevo), transferencias, plazo de conservación (`[__] meses`) y datos del responsable (nombre, NIF, dirección, correo, fecha de actualización).
+7. **Regla de conflicto.** Antes de responder a un lead, aplicar la regla de no prestar servicios personales a empresas donde SEIDOR tenga negocio (el aviso incluye la organización).
+8. **Prueba en producción (AR-13 y A-05).** Hacer la autoevaluación y pedir el whitebook con un correo personal; comprobar el adjunto, el enlace, `SPF/DKIM/DMARC: PASS`, el aviso al autor y que no llega a spam.
+9. **GitHub Pages.** Cuando Netlify funcione, desactivar Pages en el repositorio (Settings → Pages) para retirar la versión antigua con Formspree.
+
+### Otros pendientes
+
+10. **Anexo B o D** en el JSON del informe y en el whitebook (ver BLOCKERS.md).
+11. Fecha de publicación del whitebook en el JSON-LD de `index.html` (`datePublished`).
+12. URL de los activos sociales en `social/manifest.json` y `node social/render.mjs`.
+13. Opcional: `assets/img/author.jpg` (800 × 800).
+14. Validar la relación entre el plan de cien días del informe y las afirmaciones: ahora la fija `report/content/informe.es.json` (`decisiones[].plan`), que es texto del autor.
