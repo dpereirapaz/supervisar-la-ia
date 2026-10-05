@@ -9,12 +9,20 @@
     "check:html": "html-validate index.html 404.html autoevaluacion/index.html whitebook/index.html gracias/index.html privacidad/index.html cookies/index.html aviso-legal/index.html",
     "check:lighthouse": "node scripts/lighthouse.mjs",
     "render:social": "node social/render.mjs",
-    "informe": "node scripts/informe.mjs"
+    "test": "node report/scripts/test-engine.mjs && node --test netlify/functions/test/",
+    "muestras": "node report/scripts/make-samples.mjs"
   },
   "license": "UNLICENSED",
   "devDependencies": {
     "html-validate": "^11.16.1",
     "lighthouse": "^13.5.0",
     "playwright": "^1.63.0"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "pdf-lib": "^1.17.1"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
