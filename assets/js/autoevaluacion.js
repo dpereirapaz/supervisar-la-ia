@@ -96,9 +96,24 @@
       headers: { Accept: "application/json" }
     })
       .then(function (r) {
+        // Solo en pruebas locales (DELIVERY_MODE=download) la función devuelve el PDF.
+        if (r.ok && (r.headers.get("Content-Type") || "").indexOf("application/pdf") === 0) {
+          return r.blob().then(function (b) {
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(b);
+            a.download = "lectura-del-consejo.pdf";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            if (boton) boton.disabled = false;
+            avisar("PDF descargado (modo de prueba local).");
+            return null;
+          });
+        }
         return r.json().catch(function () { return { ok: false }; });
       })
       .then(function (datos) {
+        if (datos === null) return;
         if (datos && datos.ok) {
           vaciarAlmacen();
           window.location.href = form.getAttribute("data-gracias");
