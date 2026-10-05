@@ -24,11 +24,11 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 |---|---|---|---|
 | 6a | `report/` integrado; `npm test` con las 9 pruebas de referencia | hecho | f4d1910 |
 | 6b | Función `/api/informe`, `lib/` y 17 pruebas con Brevo simulado | hecho | 343d4dd |
-| 6c | Formularios R-01, copy C-10/C-11, script R-02, `/error/`, `/gracias/` | hecho | ver `git log` |
-| 6d | Páginas legales (sección 10), `netlify.toml`, `.env.example`, sin Formspree | hecho | ver `git log` |
-| 6e | Cinco perfiles generados con la función, revisados como PNG; corrección de portada (R-18) | hecho | ver `git log` |
-| 9 | `ci.yml`; eliminado `deploy.yml` | hecho | ver `git log` |
-| 6f / 11 | Comprobaciones AR-01 a AR-12 y sección 11 | hecho | ver `git log` |
+| 6c | Formularios R-01, copy C-10/C-11, script R-02, `/error/`, `/gracias/` | hecho | 64e34c4 |
+| 6d | Páginas legales (sección 10), `netlify.toml`, `.env.example`, sin Formspree | hecho | ea7551b |
+| 6e | Cinco perfiles generados con la función, revisados como PNG; corrección de portada (R-18) | hecho | 4475d24 |
+| 9 | `ci.yml`; eliminado `deploy.yml` | hecho | 0d4736f |
+| 6f / 11 | Comprobaciones AR-01 a AR-12 y sección 11 | hecho | 0cca197 |
 
 ## Comprobaciones (2026-10-05, en local con `netlify dev --offline` y `DELIVERY_MODE=download`)
 
