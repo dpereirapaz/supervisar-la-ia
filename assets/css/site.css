@@ -519,6 +519,18 @@ input[type="radio"]:focus-visible + .scale__option {
   color: var(--text);
 }
 .form__actions { margin-top: 24px; }
+.form__note {
+  font-size: 16px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.form__status {
+  font-family: var(--heading);
+  font-size: 16px;
+  color: var(--ink);
+  margin-top: 16px;
+  min-height: 1.5em;
+}
 .hp {
   position: absolute;
   left: -10000px;

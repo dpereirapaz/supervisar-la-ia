@@ -43,33 +43,32 @@
         <h1>Descargar el whitebook</h1>
         <p>Déjenos su correo y recibirá el enlace de descarga. Un correo, sin secuencias automáticas. Puede darse de baja en cualquier momento.</p>
 
-        <form class="form" action="https://formspree.io/f/xyekygrz" method="POST" data-envio="../gracias/">
+        <form class="form" action="/api/informe" method="POST">
           <div class="form__field">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required maxlength="254" autocomplete="email">
           </div>
           <div class="form__field">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="name">
+            <label for="nombre">Nombre (opcional)</label>
+            <input type="text" id="nombre" name="nombre" maxlength="80" autocomplete="name">
+          </div>
+          <div class="form__field">
+            <label for="organizacion">Organización (opcional)</label>
+            <input type="text" id="organizacion" name="organizacion" maxlength="80" autocomplete="organization">
           </div>
           <div class="form__check">
-            <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
-            <label for="privacidad">He leído la <a href="../privacidad/">política de privacidad</a> y acepto recibir el material solicitado.</label>
+            <input type="checkbox" id="consentimiento" name="consentimiento" value="si" required>
+            <label for="consentimiento">He leído la <a href="../privacidad/">política de privacidad</a> y acepto recibir el material solicitado.</label>
           </div>
           <div class="form__check">
-            <input type="checkbox" id="comunicaciones" name="comunicaciones" value="si">
-            <label for="comunicaciones">Acepto recibir, ocasionalmente, información sobre sesiones y publicaciones del autor.</label>
+            <input type="checkbox" id="info" name="info" value="si">
+            <label for="info">Acepto recibir, ocasionalmente, información sobre sesiones y publicaciones del autor.</label>
           </div>
           <div class="hp" aria-hidden="true">
             <label for="gotcha">No rellene este campo</label>
             <input type="text" id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
           </div>
           <input type="hidden" name="origen" value="whitebook">
-          <input type="hidden" name="puntuacion_total" value="">
-          <input type="hidden" name="puntuacion_grupos" value="">
-          <input type="hidden" name="fecha" value="">
-          <input type="hidden" name="_subject" value="Descarga del whitebook">
-          <input type="hidden" name="_next" value="https://dpereirapaz.github.io/supervisar-la-ia/gracias/">
           <div class="form__actions">
             <button type="submit" class="btn btn--primary">Recibir el whitebook</button>
           </div>
@@ -106,6 +105,5 @@
       </nav>
     </div>
   </footer>
-  <script src="../assets/js/envio.js"></script>
 </body>
 </html>

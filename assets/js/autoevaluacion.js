@@ -9,10 +9,9 @@
 
   var total = document.getElementById("total");
   var ceros = document.getElementById("ceros");
-  var campoTotal = form.elements.puntuacion_total;
-  var campoGrupos = form.elements.puntuacion_grupos;
-  var campoFecha = form.elements.fecha;
   var borrar = document.getElementById("borrar");
+  var estado = document.getElementById("estado-envio");
+  var boton = form.querySelector("button[type=submit]");
 
   function leerAlmacen() {
     try {
@@ -28,27 +27,29 @@
     } catch (e) { /* almacenamiento no disponible */ }
   }
 
+  function vaciarAlmacen() {
+    try { localStorage.removeItem(CLAVE); } catch (e) { /* nada */ }
+  }
+
   function respuestas() {
     var r = {};
     for (var i = 1; i <= GRUPOS * POR_GRUPO; i++) {
-      var marcado = form.querySelector('input[name="a' + i + '"]:checked');
-      if (marcado) r["a" + i] = Number(marcado.value);
+      var marcado = form.querySelector('input[name="r' + i + '"]:checked');
+      if (marcado) r["r" + i] = Number(marcado.value);
     }
     return r;
   }
 
   function calcular() {
     var r = respuestas();
-    var porGrupo = [];
     var suma = 0;
     var titulosCero = [];
 
     for (var g = 0; g < GRUPOS; g++) {
       var s = 0;
       for (var k = 1; k <= POR_GRUPO; k++) {
-        s += r["a" + (g * POR_GRUPO + k)] || 0;
+        s += r["r" + (g * POR_GRUPO + k)] || 0;
       }
-      porGrupo.push(s);
       suma += s;
 
       var barra = document.getElementById("barra-" + (g + 1));
@@ -61,17 +62,20 @@
 
     if (total) total.textContent = suma;
     if (ceros) ceros.textContent = titulosCero.length ? titulosCero.join(", ") : "ninguna";
-    if (campoTotal) campoTotal.value = suma;
-    if (campoGrupos) campoGrupos.value = porGrupo.join(",");
     return r;
   }
 
   function restaurar() {
     var guardado = leerAlmacen();
     Object.keys(guardado).forEach(function (nombre) {
-      var radio = form.querySelector('input[name="' + nombre + '"][value="' + guardado[nombre] + '"]');
+      var campo = nombre.replace(/^a(\d+)$/, "r$1");
+      var radio = form.querySelector('input[name="' + campo + '"][value="' + guardado[nombre] + '"]');
       if (radio) radio.checked = true;
     });
+  }
+
+  function avisar(texto) {
+    if (estado) estado.textContent = texto;
   }
 
   form.addEventListener("change", function (ev) {
@@ -80,40 +84,38 @@
     }
   });
 
-  function resumen() {
-    var r = respuestas();
-    var lineas = ["Total: " + (total ? total.textContent : "") + " / 54"];
-    var grupos = form.querySelectorAll("fieldset.group");
-    Array.prototype.forEach.call(grupos, function (g, gi) {
-      var s = 0, filas = [];
-      for (var k = 1; k <= POR_GRUPO; k++) {
-        var n = gi * POR_GRUPO + k, v = r["a" + n];
-        s += v || 0;
-        var txt = form.querySelectorAll("legend.item__text")[n - 1].textContent.replace(/^\d+/, "").trim();
-        filas.push("  " + n + ". [" + (v == null ? "-" : v) + "] " + txt);
-      }
-      lineas.push("", g.querySelector("legend.group__title").textContent + ": " + s + " / 9");
-      lineas = lineas.concat(filas);
-    });
-    lineas.push("", "Decisiones que puntúan cero: " + (ceros ? ceros.textContent : ""));
-    return lineas.join("\n");
-  }
+  form.addEventListener("submit", function (ev) {
+    if (!window.fetch || !window.FormData) return;
+    ev.preventDefault();
+    if (boton) boton.disabled = true;
+    avisar(form.getAttribute("data-enviando"));
 
-  form.addEventListener("submit", function () {
-    calcular();
-    if (campoFecha) campoFecha.value = new Date().toISOString();
+    fetch(form.getAttribute("action"), {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then(function (r) {
+        return r.json().catch(function () { return { ok: false }; });
+      })
+      .then(function (datos) {
+        if (datos && datos.ok) {
+          vaciarAlmacen();
+          window.location.href = form.getAttribute("data-gracias");
+          return;
+        }
+        throw datos;
+      })
+      .catch(function (datos) {
+        if (boton) boton.disabled = false;
+        avisar((datos && datos.mensaje) || form.getAttribute("data-error"));
+      });
   });
-
-  form.__extra = function () {
-    var r = respuestas(), lista = [];
-    for (var i = 1; i <= GRUPOS * POR_GRUPO; i++) lista.push(r["a" + i] == null ? "" : r["a" + i]);
-    return { respuestas: lista.join(","), resumen: resumen() };
-  };
 
   if (borrar) {
     borrar.addEventListener("click", function (ev) {
       ev.preventDefault();
-      try { localStorage.removeItem(CLAVE); } catch (e) { /* nada */ }
+      vaciarAlmacen();
       Array.prototype.forEach.call(form.querySelectorAll('input[type="radio"]'), function (radio) {
         radio.checked = false;
       });

@@ -50,35 +50,35 @@
         </ul>
         <p class="tools"><a href="./" id="borrar">Borrar respuestas</a></p>
 
-        <form id="autoevaluacion" class="autoevaluacion" action="https://formspree.io/f/xyekygrz" method="POST" data-envio="../gracias/">
+        <form id="autoevaluacion" class="autoevaluacion" action="/api/informe" method="POST" data-gracias="/gracias/" data-enviando="Preparando su informe…" data-error="No hemos podido enviar el informe. Inténtelo de nuevo en unos minutos o escriba a [correo de contacto].">
 
           <fieldset class="group">
             <legend class="group__title">Por dónde empezar</legend>
             <fieldset class="item">
               <legend class="item__text"><span>1</span>Existe una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a1" id="a1-0" value="0"><label class="scale__option" for="a1-0">0</label>
-                <input class="visually-hidden" type="radio" name="a1" id="a1-1" value="1"><label class="scale__option" for="a1-1">1</label>
-                <input class="visually-hidden" type="radio" name="a1" id="a1-2" value="2"><label class="scale__option" for="a1-2">2</label>
-                <input class="visually-hidden" type="radio" name="a1" id="a1-3" value="3"><label class="scale__option" for="a1-3">3</label>
+                <input class="visually-hidden" type="radio" name="r1" id="r1-0" value="0" required><label class="scale__option" for="r1-0">0</label>
+                <input class="visually-hidden" type="radio" name="r1" id="r1-1" value="1" required><label class="scale__option" for="r1-1">1</label>
+                <input class="visually-hidden" type="radio" name="r1" id="r1-2" value="2" required><label class="scale__option" for="r1-2">2</label>
+                <input class="visually-hidden" type="radio" name="r1" id="r1-3" value="3" required><label class="scale__option" for="r1-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>2</span>La dirección ha dejado por escrito qué no va a hacer este año con la IA, y por qué.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a2" id="a2-0" value="0"><label class="scale__option" for="a2-0">0</label>
-                <input class="visually-hidden" type="radio" name="a2" id="a2-1" value="1"><label class="scale__option" for="a2-1">1</label>
-                <input class="visually-hidden" type="radio" name="a2" id="a2-2" value="2"><label class="scale__option" for="a2-2">2</label>
-                <input class="visually-hidden" type="radio" name="a2" id="a2-3" value="3"><label class="scale__option" for="a2-3">3</label>
+                <input class="visually-hidden" type="radio" name="r2" id="r2-0" value="0" required><label class="scale__option" for="r2-0">0</label>
+                <input class="visually-hidden" type="radio" name="r2" id="r2-1" value="1" required><label class="scale__option" for="r2-1">1</label>
+                <input class="visually-hidden" type="radio" name="r2" id="r2-2" value="2" required><label class="scale__option" for="r2-2">2</label>
+                <input class="visually-hidden" type="radio" name="r2" id="r2-3" value="3" required><label class="scale__option" for="r2-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>3</span>El consejo ha discutido el impacto de la IA en el modelo de negocio de la compañía, con un análisis de mercado delante.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a3" id="a3-0" value="0"><label class="scale__option" for="a3-0">0</label>
-                <input class="visually-hidden" type="radio" name="a3" id="a3-1" value="1"><label class="scale__option" for="a3-1">1</label>
-                <input class="visually-hidden" type="radio" name="a3" id="a3-2" value="2"><label class="scale__option" for="a3-2">2</label>
-                <input class="visually-hidden" type="radio" name="a3" id="a3-3" value="3"><label class="scale__option" for="a3-3">3</label>
+                <input class="visually-hidden" type="radio" name="r3" id="r3-0" value="0" required><label class="scale__option" for="r3-0">0</label>
+                <input class="visually-hidden" type="radio" name="r3" id="r3-1" value="1" required><label class="scale__option" for="r3-1">1</label>
+                <input class="visually-hidden" type="radio" name="r3" id="r3-2" value="2" required><label class="scale__option" for="r3-2">2</label>
+                <input class="visually-hidden" type="radio" name="r3" id="r3-3" value="3" required><label class="scale__option" for="r3-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -88,28 +88,28 @@
             <fieldset class="item">
               <legend class="item__text"><span>4</span>Hay un inventario completo de los sistemas de IA en uso, incluidos los que la plantilla utiliza por su cuenta.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a4" id="a4-0" value="0"><label class="scale__option" for="a4-0">0</label>
-                <input class="visually-hidden" type="radio" name="a4" id="a4-1" value="1"><label class="scale__option" for="a4-1">1</label>
-                <input class="visually-hidden" type="radio" name="a4" id="a4-2" value="2"><label class="scale__option" for="a4-2">2</label>
-                <input class="visually-hidden" type="radio" name="a4" id="a4-3" value="3"><label class="scale__option" for="a4-3">3</label>
+                <input class="visually-hidden" type="radio" name="r4" id="r4-0" value="0" required><label class="scale__option" for="r4-0">0</label>
+                <input class="visually-hidden" type="radio" name="r4" id="r4-1" value="1" required><label class="scale__option" for="r4-1">1</label>
+                <input class="visually-hidden" type="radio" name="r4" id="r4-2" value="2" required><label class="scale__option" for="r4-2">2</label>
+                <input class="visually-hidden" type="radio" name="r4" id="r4-3" value="3" required><label class="scale__option" for="r4-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>5</span>Una persona concreta puede detener cualquier sistema de IA, y toda la organización sabe quién es.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a5" id="a5-0" value="0"><label class="scale__option" for="a5-0">0</label>
-                <input class="visually-hidden" type="radio" name="a5" id="a5-1" value="1"><label class="scale__option" for="a5-1">1</label>
-                <input class="visually-hidden" type="radio" name="a5" id="a5-2" value="2"><label class="scale__option" for="a5-2">2</label>
-                <input class="visually-hidden" type="radio" name="a5" id="a5-3" value="3"><label class="scale__option" for="a5-3">3</label>
+                <input class="visually-hidden" type="radio" name="r5" id="r5-0" value="0" required><label class="scale__option" for="r5-0">0</label>
+                <input class="visually-hidden" type="radio" name="r5" id="r5-1" value="1" required><label class="scale__option" for="r5-1">1</label>
+                <input class="visually-hidden" type="radio" name="r5" id="r5-2" value="2" required><label class="scale__option" for="r5-2">2</label>
+                <input class="visually-hidden" type="radio" name="r5" id="r5-3" value="3" required><label class="scale__option" for="r5-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>6</span>Los sistemas que intervienen en decisiones sobre personas están identificados y clasificados por riesgo.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a6" id="a6-0" value="0"><label class="scale__option" for="a6-0">0</label>
-                <input class="visually-hidden" type="radio" name="a6" id="a6-1" value="1"><label class="scale__option" for="a6-1">1</label>
-                <input class="visually-hidden" type="radio" name="a6" id="a6-2" value="2"><label class="scale__option" for="a6-2">2</label>
-                <input class="visually-hidden" type="radio" name="a6" id="a6-3" value="3"><label class="scale__option" for="a6-3">3</label>
+                <input class="visually-hidden" type="radio" name="r6" id="r6-0" value="0" required><label class="scale__option" for="r6-0">0</label>
+                <input class="visually-hidden" type="radio" name="r6" id="r6-1" value="1" required><label class="scale__option" for="r6-1">1</label>
+                <input class="visually-hidden" type="radio" name="r6" id="r6-2" value="2" required><label class="scale__option" for="r6-2">2</label>
+                <input class="visually-hidden" type="radio" name="r6" id="r6-3" value="3" required><label class="scale__option" for="r6-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -119,28 +119,28 @@
             <fieldset class="item">
               <legend class="item__text"><span>7</span>Cada piloto abierto tiene una fecha acordada para ampliarse o cerrarse.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a7" id="a7-0" value="0"><label class="scale__option" for="a7-0">0</label>
-                <input class="visually-hidden" type="radio" name="a7" id="a7-1" value="1"><label class="scale__option" for="a7-1">1</label>
-                <input class="visually-hidden" type="radio" name="a7" id="a7-2" value="2"><label class="scale__option" for="a7-2">2</label>
-                <input class="visually-hidden" type="radio" name="a7" id="a7-3" value="3"><label class="scale__option" for="a7-3">3</label>
+                <input class="visually-hidden" type="radio" name="r7" id="r7-0" value="0" required><label class="scale__option" for="r7-0">0</label>
+                <input class="visually-hidden" type="radio" name="r7" id="r7-1" value="1" required><label class="scale__option" for="r7-1">1</label>
+                <input class="visually-hidden" type="radio" name="r7" id="r7-2" value="2" required><label class="scale__option" for="r7-2">2</label>
+                <input class="visually-hidden" type="radio" name="r7" id="r7-3" value="3" required><label class="scale__option" for="r7-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>8</span>Antes de empezar cada piloto se acuerda el criterio de valor con el que se evaluará.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a8" id="a8-0" value="0"><label class="scale__option" for="a8-0">0</label>
-                <input class="visually-hidden" type="radio" name="a8" id="a8-1" value="1"><label class="scale__option" for="a8-1">1</label>
-                <input class="visually-hidden" type="radio" name="a8" id="a8-2" value="2"><label class="scale__option" for="a8-2">2</label>
-                <input class="visually-hidden" type="radio" name="a8" id="a8-3" value="3"><label class="scale__option" for="a8-3">3</label>
+                <input class="visually-hidden" type="radio" name="r8" id="r8-0" value="0" required><label class="scale__option" for="r8-0">0</label>
+                <input class="visually-hidden" type="radio" name="r8" id="r8-1" value="1" required><label class="scale__option" for="r8-1">1</label>
+                <input class="visually-hidden" type="radio" name="r8" id="r8-2" value="2" required><label class="scale__option" for="r8-2">2</label>
+                <input class="visually-hidden" type="radio" name="r8" id="r8-3" value="3" required><label class="scale__option" for="r8-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>9</span>Existe una forma estable de llevar un sistema a producción, con responsables definidos.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a9" id="a9-0" value="0"><label class="scale__option" for="a9-0">0</label>
-                <input class="visually-hidden" type="radio" name="a9" id="a9-1" value="1"><label class="scale__option" for="a9-1">1</label>
-                <input class="visually-hidden" type="radio" name="a9" id="a9-2" value="2"><label class="scale__option" for="a9-2">2</label>
-                <input class="visually-hidden" type="radio" name="a9" id="a9-3" value="3"><label class="scale__option" for="a9-3">3</label>
+                <input class="visually-hidden" type="radio" name="r9" id="r9-0" value="0" required><label class="scale__option" for="r9-0">0</label>
+                <input class="visually-hidden" type="radio" name="r9" id="r9-1" value="1" required><label class="scale__option" for="r9-1">1</label>
+                <input class="visually-hidden" type="radio" name="r9" id="r9-2" value="2" required><label class="scale__option" for="r9-2">2</label>
+                <input class="visually-hidden" type="radio" name="r9" id="r9-3" value="3" required><label class="scale__option" for="r9-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -150,28 +150,28 @@
             <fieldset class="item">
               <legend class="item__text"><span>10</span>Hay un punto de partida registrado antes de empezar cada iniciativa.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a10" id="a10-0" value="0"><label class="scale__option" for="a10-0">0</label>
-                <input class="visually-hidden" type="radio" name="a10" id="a10-1" value="1"><label class="scale__option" for="a10-1">1</label>
-                <input class="visually-hidden" type="radio" name="a10" id="a10-2" value="2"><label class="scale__option" for="a10-2">2</label>
-                <input class="visually-hidden" type="radio" name="a10" id="a10-3" value="3"><label class="scale__option" for="a10-3">3</label>
+                <input class="visually-hidden" type="radio" name="r10" id="r10-0" value="0" required><label class="scale__option" for="r10-0">0</label>
+                <input class="visually-hidden" type="radio" name="r10" id="r10-1" value="1" required><label class="scale__option" for="r10-1">1</label>
+                <input class="visually-hidden" type="radio" name="r10" id="r10-2" value="2" required><label class="scale__option" for="r10-2">2</label>
+                <input class="visually-hidden" type="radio" name="r10" id="r10-3" value="3" required><label class="scale__option" for="r10-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>11</span>Al consejo llega un dato de valor con alguien que responde de él.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a11" id="a11-0" value="0"><label class="scale__option" for="a11-0">0</label>
-                <input class="visually-hidden" type="radio" name="a11" id="a11-1" value="1"><label class="scale__option" for="a11-1">1</label>
-                <input class="visually-hidden" type="radio" name="a11" id="a11-2" value="2"><label class="scale__option" for="a11-2">2</label>
-                <input class="visually-hidden" type="radio" name="a11" id="a11-3" value="3"><label class="scale__option" for="a11-3">3</label>
+                <input class="visually-hidden" type="radio" name="r11" id="r11-0" value="0" required><label class="scale__option" for="r11-0">0</label>
+                <input class="visually-hidden" type="radio" name="r11" id="r11-1" value="1" required><label class="scale__option" for="r11-1">1</label>
+                <input class="visually-hidden" type="radio" name="r11" id="r11-2" value="2" required><label class="scale__option" for="r11-2">2</label>
+                <input class="visually-hidden" type="radio" name="r11" id="r11-3" value="3" required><label class="scale__option" for="r11-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>12</span>Ningún indicador de uso se ha convertido en objetivo.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a12" id="a12-0" value="0"><label class="scale__option" for="a12-0">0</label>
-                <input class="visually-hidden" type="radio" name="a12" id="a12-1" value="1"><label class="scale__option" for="a12-1">1</label>
-                <input class="visually-hidden" type="radio" name="a12" id="a12-2" value="2"><label class="scale__option" for="a12-2">2</label>
-                <input class="visually-hidden" type="radio" name="a12" id="a12-3" value="3"><label class="scale__option" for="a12-3">3</label>
+                <input class="visually-hidden" type="radio" name="r12" id="r12-0" value="0" required><label class="scale__option" for="r12-0">0</label>
+                <input class="visually-hidden" type="radio" name="r12" id="r12-1" value="1" required><label class="scale__option" for="r12-1">1</label>
+                <input class="visually-hidden" type="radio" name="r12" id="r12-2" value="2" required><label class="scale__option" for="r12-2">2</label>
+                <input class="visually-hidden" type="radio" name="r12" id="r12-3" value="3" required><label class="scale__option" for="r12-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -181,28 +181,28 @@
             <fieldset class="item">
               <legend class="item__text"><span>13</span>Cambiar de proveedor de modelos no obligaría a rehacer los sistemas.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a13" id="a13-0" value="0"><label class="scale__option" for="a13-0">0</label>
-                <input class="visually-hidden" type="radio" name="a13" id="a13-1" value="1"><label class="scale__option" for="a13-1">1</label>
-                <input class="visually-hidden" type="radio" name="a13" id="a13-2" value="2"><label class="scale__option" for="a13-2">2</label>
-                <input class="visually-hidden" type="radio" name="a13" id="a13-3" value="3"><label class="scale__option" for="a13-3">3</label>
+                <input class="visually-hidden" type="radio" name="r13" id="r13-0" value="0" required><label class="scale__option" for="r13-0">0</label>
+                <input class="visually-hidden" type="radio" name="r13" id="r13-1" value="1" required><label class="scale__option" for="r13-1">1</label>
+                <input class="visually-hidden" type="radio" name="r13" id="r13-2" value="2" required><label class="scale__option" for="r13-2">2</label>
+                <input class="visually-hidden" type="radio" name="r13" id="r13-3" value="3" required><label class="scale__option" for="r13-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>14</span>Existe una batería de casos reales que se repite antes de cada cambio de modelo.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a14" id="a14-0" value="0"><label class="scale__option" for="a14-0">0</label>
-                <input class="visually-hidden" type="radio" name="a14" id="a14-1" value="1"><label class="scale__option" for="a14-1">1</label>
-                <input class="visually-hidden" type="radio" name="a14" id="a14-2" value="2"><label class="scale__option" for="a14-2">2</label>
-                <input class="visually-hidden" type="radio" name="a14" id="a14-3" value="3"><label class="scale__option" for="a14-3">3</label>
+                <input class="visually-hidden" type="radio" name="r14" id="r14-0" value="0" required><label class="scale__option" for="r14-0">0</label>
+                <input class="visually-hidden" type="radio" name="r14" id="r14-1" value="1" required><label class="scale__option" for="r14-1">1</label>
+                <input class="visually-hidden" type="radio" name="r14" id="r14-2" value="2" required><label class="scale__option" for="r14-2">2</label>
+                <input class="visually-hidden" type="radio" name="r14" id="r14-3" value="3" required><label class="scale__option" for="r14-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>15</span>En los procesos más delicados hay un umbral de confianza y una vía para pasar el caso a una persona.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a15" id="a15-0" value="0"><label class="scale__option" for="a15-0">0</label>
-                <input class="visually-hidden" type="radio" name="a15" id="a15-1" value="1"><label class="scale__option" for="a15-1">1</label>
-                <input class="visually-hidden" type="radio" name="a15" id="a15-2" value="2"><label class="scale__option" for="a15-2">2</label>
-                <input class="visually-hidden" type="radio" name="a15" id="a15-3" value="3"><label class="scale__option" for="a15-3">3</label>
+                <input class="visually-hidden" type="radio" name="r15" id="r15-0" value="0" required><label class="scale__option" for="r15-0">0</label>
+                <input class="visually-hidden" type="radio" name="r15" id="r15-1" value="1" required><label class="scale__option" for="r15-1">1</label>
+                <input class="visually-hidden" type="radio" name="r15" id="r15-2" value="2" required><label class="scale__option" for="r15-2">2</label>
+                <input class="visually-hidden" type="radio" name="r15" id="r15-3" value="3" required><label class="scale__option" for="r15-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -212,28 +212,28 @@
             <fieldset class="item">
               <legend class="item__text"><span>16</span>El uso de la IA no depende de dos o tres personas concretas.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a16" id="a16-0" value="0"><label class="scale__option" for="a16-0">0</label>
-                <input class="visually-hidden" type="radio" name="a16" id="a16-1" value="1"><label class="scale__option" for="a16-1">1</label>
-                <input class="visually-hidden" type="radio" name="a16" id="a16-2" value="2"><label class="scale__option" for="a16-2">2</label>
-                <input class="visually-hidden" type="radio" name="a16" id="a16-3" value="3"><label class="scale__option" for="a16-3">3</label>
+                <input class="visually-hidden" type="radio" name="r16" id="r16-0" value="0" required><label class="scale__option" for="r16-0">0</label>
+                <input class="visually-hidden" type="radio" name="r16" id="r16-1" value="1" required><label class="scale__option" for="r16-1">1</label>
+                <input class="visually-hidden" type="radio" name="r16" id="r16-2" value="2" required><label class="scale__option" for="r16-2">2</label>
+                <input class="visually-hidden" type="radio" name="r16" id="r16-3" value="3" required><label class="scale__option" for="r16-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>17</span>Las medidas de alfabetización en IA están documentadas y se pueden acreditar.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a17" id="a17-0" value="0"><label class="scale__option" for="a17-0">0</label>
-                <input class="visually-hidden" type="radio" name="a17" id="a17-1" value="1"><label class="scale__option" for="a17-1">1</label>
-                <input class="visually-hidden" type="radio" name="a17" id="a17-2" value="2"><label class="scale__option" for="a17-2">2</label>
-                <input class="visually-hidden" type="radio" name="a17" id="a17-3" value="3"><label class="scale__option" for="a17-3">3</label>
+                <input class="visually-hidden" type="radio" name="r17" id="r17-0" value="0" required><label class="scale__option" for="r17-0">0</label>
+                <input class="visually-hidden" type="radio" name="r17" id="r17-1" value="1" required><label class="scale__option" for="r17-1">1</label>
+                <input class="visually-hidden" type="radio" name="r17" id="r17-2" value="2" required><label class="scale__option" for="r17-2">2</label>
+                <input class="visually-hidden" type="radio" name="r17" id="r17-3" value="3" required><label class="scale__option" for="r17-3">3</label>
               </div>
             </fieldset>
             <fieldset class="item">
               <legend class="item__text"><span>18</span>Hay un plan para formar a los expertos del futuro si dejan de entrar perfiles júnior.</legend>
               <div class="scale">
-                <input class="visually-hidden" type="radio" name="a18" id="a18-0" value="0"><label class="scale__option" for="a18-0">0</label>
-                <input class="visually-hidden" type="radio" name="a18" id="a18-1" value="1"><label class="scale__option" for="a18-1">1</label>
-                <input class="visually-hidden" type="radio" name="a18" id="a18-2" value="2"><label class="scale__option" for="a18-2">2</label>
-                <input class="visually-hidden" type="radio" name="a18" id="a18-3" value="3"><label class="scale__option" for="a18-3">3</label>
+                <input class="visually-hidden" type="radio" name="r18" id="r18-0" value="0" required><label class="scale__option" for="r18-0">0</label>
+                <input class="visually-hidden" type="radio" name="r18" id="r18-1" value="1" required><label class="scale__option" for="r18-1">1</label>
+                <input class="visually-hidden" type="radio" name="r18" id="r18-2" value="2" required><label class="scale__option" for="r18-2">2</label>
+                <input class="visually-hidden" type="radio" name="r18" id="r18-3" value="3" required><label class="scale__option" for="r18-3">3</label>
               </div>
             </fieldset>
           </fieldset>
@@ -255,36 +255,38 @@
           </section>
 
           <div class="form">
-            <h2>Reciba el resultado y el whitebook por correo</h2>
+            <h2>Reciba su lectura del consejo</h2>
+            <p>Le enviamos por correo un PDF con una lectura cualitativa de su resultado y una propuesta para los primeros cien días del consejo, más el enlace al whitebook.</p>
             <div class="form__field">
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" required autocomplete="email">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required maxlength="254" autocomplete="email">
             </div>
             <div class="form__field">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" autocomplete="name">
+              <label for="nombre">Nombre (opcional)</label>
+              <input type="text" id="nombre" name="nombre" maxlength="80" autocomplete="name">
+            </div>
+            <div class="form__field">
+              <label for="organizacion">Organización (opcional)</label>
+              <input type="text" id="organizacion" name="organizacion" maxlength="80" autocomplete="organization">
             </div>
             <div class="form__check">
-              <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
-              <label for="privacidad">He leído la <a href="../privacidad/">política de privacidad</a> y acepto recibir el material solicitado.</label>
+              <input type="checkbox" id="consentimiento" name="consentimiento" value="si" required>
+              <label for="consentimiento">He leído la <a href="../privacidad/">política de privacidad</a> y acepto que se traten mis respuestas para elaborar y enviarme el informe.</label>
             </div>
             <div class="form__check">
-              <input type="checkbox" id="comunicaciones" name="comunicaciones" value="si">
-              <label for="comunicaciones">Acepto recibir, ocasionalmente, información sobre sesiones y publicaciones del autor.</label>
+              <input type="checkbox" id="info" name="info" value="si">
+              <label for="info">Acepto recibir, ocasionalmente, información sobre sesiones y publicaciones del autor.</label>
             </div>
             <div class="hp" aria-hidden="true">
               <label for="gotcha">No rellene este campo</label>
               <input type="text" id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
             </div>
             <input type="hidden" name="origen" value="autoevaluacion">
-            <input type="hidden" name="puntuacion_total" value="">
-            <input type="hidden" name="puntuacion_grupos" value="">
-            <input type="hidden" name="fecha" value="">
-            <input type="hidden" name="_subject" value="Autoevaluación del consejo">
-            <input type="hidden" name="_next" value="https://dpereirapaz.github.io/supervisar-la-ia/gracias/">
+            <p class="form__note">Sus respuestas se usan para elaborar el informe. El autor recibe su correo, la puntuación total y la puntuación de cada decisión. Las respuestas individuales no se guardan.</p>
             <div class="form__actions">
-              <button type="submit" class="btn btn--primary">Enviar</button>
+              <button type="submit" class="btn btn--primary">Recibir mi lectura en PDF</button>
             </div>
+            <p class="form__status" id="estado-envio" aria-live="polite"></p>
           </div>
 
         </form>
@@ -307,6 +309,5 @@
   </footer>
 
   <script src="../assets/js/autoevaluacion.js"></script>
-  <script src="../assets/js/envio.js"></script>
 </body>
 </html>
