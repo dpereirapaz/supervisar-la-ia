@@ -30,7 +30,7 @@ Los formularios de `/whitebook/` y `/autoevaluacion/` envían un `POST` HTML pla
 <form action="https://formspree.io/f/[__]" method="POST">
 ```
 
-Sustituya `[__]` por el identificador del formulario que le da Formspree al crearlo (plan gratuito). El campo oculto `_next` lleva la URL absoluta de `/gracias/`; cámbiela si usa dominio propio.
+El endpoint actual es `https://formspree.io/f/xyekygrz`. Para cambiarlo, sustituya el identificador en los dos `action`. El campo oculto `_next` lleva la URL absoluta de `/gracias/`; cámbiela si usa dominio propio.
 
 ### Enlace privado del PDF (T-10)
 

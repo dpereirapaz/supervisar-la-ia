@@ -40,7 +40,7 @@ Los subagentes `qa`, `security-reviewer`, `designer` y `web-developer` se bloque
 
 ## Pendiente del autor antes de publicar
 
-1. **Formspree**: crear el formulario (plan gratuito) y sustituir `[__]` en el atributo `action` de `autoevaluacion/index.html` y `whitebook/index.html` por `https://formspree.io/f/<id>`. Después, ejecutar A-04 y A-05 con envíos reales.
+1. **Formspree**: endpoint `https://formspree.io/f/xyekygrz` conectado en los dos formularios (2026-10-05). Falta confirmar el formulario desde el correo de activación de Formspree.
 2. **Respuesta automática**: en Formspree (Settings → Autoresponse) incluir el enlace privado del PDF (Drive/Dropbox). El PDF no debe subirse al repositorio.
 3. **Datos legales** en `privacidad/`, `cookies/` y `aviso-legal/`: nombre completo, NIF, dirección postal, correo de contacto (aparece dos veces en privacidad: responsable y ejercicio de derechos) y fecha de última actualización.
 4. **Fecha de publicación** del whitebook en el JSON-LD `Book` de `index.html` (`datePublished`).
