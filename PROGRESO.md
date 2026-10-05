@@ -56,6 +56,13 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 
 ## Pendiente del autor
 
+### Estado de producción (2026-10-05, noche)
+
+- Netlify: proyecto `supervisarlaia` creado desde GitHub y publicado en `https://supervisarlaia.netlify.app` (páginas, cabeceras de T-11 y función comprobadas). Variables definidas: `MAIL_FROM_NAME`, `CONTACT_EMAIL`, `SITE_URL`, `SITE_HOST`, `AUTHOR_EMAIL`, `MAIL_REPLY_TO`, `BREVO_API_KEY` y `WHITEBOOK_URL` (estas dos, solo en Production y como secretas). Falta `MAIL_FROM`.
+- Dominio: `supervisarlaia.es` añadido en Netlify con DNS externa. En DonDominio: ANAME de la raíz → `supervisarlaia.netlify.app`, CNAME `www` → `supervisarlaia.netlify.app`, y los cuatro registros de Brevo (TXT `brevo-code`, CNAME `brevo1._domainkey` y `brevo2._domainkey`, TXT `_dmarc` con `p=none`). **Pendiente:** nic.es aún no publica el `.es` (NXDOMAIN); hasta entonces no resuelve nada.
+- Whitebook: `Supervision_de_la_IA_v1.0.pdf` (fuera de git) subido a Drive y enlazado en `WHITEBOOK_URL`.
+- Siguientes pasos cuando resuelva la DNS: verificar el dominio en Netlify (HTTPS) y en Brevo; añadir `supervisarlaia.com` como alias; crear en Brevo el remitente (por ejemplo `informes@supervisarlaia.es`) y ponerlo en `MAIL_FROM`; volver a desplegar; prueba AR-13 y A-05; desactivar GitHub Pages.
+
 ### Anexo, sección 15 (antes de publicar)
 
 1. **Dominio.** Registrados `supervisarlaia.es` (principal) y `supervisarlaia.com` (2026-10-05). Las URL del sitio, `sitemap.xml`, `robots.txt` y los activos sociales ya usan `https://supervisarlaia.es/`. Falta apuntarlos a Netlify, activar HTTPS, configurar `supervisarlaia.com` como alias que redirige al `.es`, y poner `SITE_URL=https://supervisarlaia.es` y `SITE_HOST=supervisarlaia.es`.
