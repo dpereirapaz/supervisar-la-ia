@@ -58,7 +58,7 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 
 ### Anexo, sección 15 (antes de publicar)
 
-1. **Dominio.** Comprarlo, apuntarlo a Netlify y activar HTTPS. Poner la URL en `SITE_URL` y `SITE_HOST`. Sustituir `https://dpereirapaz.github.io/supervisar-la-ia/` por la URL final en `canonical`, Open Graph, `sitemap.xml` y `robots.txt` de todas las páginas.
+1. **Dominio.** Registrados `supervisarlaia.es` (principal) y `supervisarlaia.com` (2026-10-05). Las URL del sitio, `sitemap.xml`, `robots.txt` y los activos sociales ya usan `https://supervisarlaia.es/`. Falta apuntarlos a Netlify, activar HTTPS, configurar `supervisarlaia.com` como alias que redirige al `.es`, y poner `SITE_URL=https://supervisarlaia.es` y `SITE_HOST=supervisarlaia.es`.
 2. **Netlify.** Crear el sitio desde el repositorio `dpereirapaz/supervisar-la-ia` y definir las variables de entorno de la sección 11 (ver README). Comprobar que Netlify Blobs está disponible (límite de solicitudes, R-12).
 3. **Brevo.** Crear la cuenta, autenticar el dominio (SPF, DKIM, DMARC), crear la clave de API (`BREVO_API_KEY`), desactivar el seguimiento de aperturas y clics y revisar límites y marca del plan gratuito. Opcional: lista para `BREVO_LIST_ID`.
 4. **Direcciones.** `CONTACT_EMAIL` = `dpereirapaz@gmail.com` (fijado por el autor el 2026-10-05; ya está en `/error/`, en el mensaje de error del formulario y en las páginas legales). Faltan `MAIL_FROM` (en el dominio del sitio, no Gmail ni Outlook, R-23), `MAIL_REPLY_TO` y `AUTHOR_EMAIL`.
@@ -71,6 +71,5 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 ### Otros pendientes
 
 11. Fecha de publicación del whitebook en el JSON-LD de `index.html` (`datePublished`).
-12. URL de los activos sociales en `social/manifest.json` y `node social/render.mjs`.
 13. Opcional: `assets/img/author.jpg` (800 × 800).
 14. Validar la relación entre el plan de cien días del informe y las afirmaciones: ahora la fija `report/content/informe.es.json` (`decisiones[].plan`), que es texto del autor.

@@ -9,7 +9,7 @@
       ],
       "copy": {
         "statement": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "92px",
@@ -27,7 +27,7 @@
       ],
       "copy": {
         "statement": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "84px",
@@ -45,7 +45,7 @@
       ],
       "copy": {
         "statement": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "92px",
@@ -64,7 +64,7 @@
       "copy": {
         "question": "¿Puede la dirección decirnos qué no va a hacer este año con la IA, quién puede frenar un proyecto y qué dato nos va a traer?",
         "answer": "Si no, el consejo todavía no supervisa la IA.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--question-size": "72px",
@@ -83,7 +83,7 @@
       "copy": {
         "question": "¿Cuántos de sus pilotos de IA tienen fecha para ampliarse o cerrarse?",
         "answer": "Un piloto sin fecha es la forma más cara de aplazar una decisión.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--question-size": "72px",
@@ -100,7 +100,7 @@
         1350
       ],
       "copy": {
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--title-size": "132px",
@@ -123,7 +123,7 @@
         "kicker": "Decisión 1 de 6",
         "title": "Por dónde empezar",
         "description": "Elegir los usos por valor, riesgo y viabilidad. Tan importante como lo que se aprueba es lo que se descarta.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 1 de 6, Por dónde empezar: elegir los usos por valor, riesgo y viabilidad."
     },
@@ -139,7 +139,7 @@
         "kicker": "Decisión 2 de 6",
         "title": "Cómo gobernarla",
         "description": "Que alguien con nombre pueda detener un sistema mañana, y que toda la organización sepa quién es.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 2 de 6, Cómo gobernarla: que alguien con nombre pueda detener un sistema mañana."
     },
@@ -155,7 +155,7 @@
         "kicker": "Decisión 3 de 6",
         "title": "Cómo pasar de las pruebas a los resultados",
         "description": "Cada piloto nace con una fecha para ampliarse o cerrarse.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 3 de 6, Cómo pasar de las pruebas a los resultados: cada piloto nace con una fecha."
     },
@@ -171,7 +171,7 @@
         "kicker": "Decisión 4 de 6",
         "title": "Cómo medir",
         "description": "Un dato de valor llega al consejo, y alguien responde de él.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 4 de 6, Cómo medir: un dato de valor llega al consejo, y alguien responde de él."
     },
@@ -187,7 +187,7 @@
         "kicker": "Decisión 5 de 6",
         "title": "Sobre qué tecnología construir",
         "description": "Cambiar de proveedor es una decisión de gestión, no una reconstrucción.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 5 de 6, Sobre qué tecnología construir: cambiar de proveedor es una decisión de gestión."
     },
@@ -203,7 +203,7 @@
         "kicker": "Decisión 6 de 6",
         "title": "Cómo implicar a las personas",
         "description": "El uso sobrevive a la salida de quien lo impulsó.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "alt": "Decisión 6 de 6, Cómo implicar a las personas: el uso sobrevive a la salida de quien lo impulsó."
     },
@@ -215,7 +215,7 @@
         630
       ],
       "copy": {
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--title-size": "96px",
@@ -234,7 +234,7 @@
         396
       ],
       "copy": {
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--title-size": "56px",
@@ -255,7 +255,7 @@
       ],
       "copy": {
         "statement": "La estrategia empieza por lo que no se puede comprar, porque lo que se alquila no es una ventaja.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "80px",
@@ -273,7 +273,7 @@
       ],
       "copy": {
         "statement": "Detrás de cada proceso automatizado tiene que haber alguien que dé la cara, porque una máquina no puede responder de nada.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "80px",
@@ -291,7 +291,7 @@
       ],
       "copy": {
         "statement": "Cada respuesta cuesta menos y la factura total crece. Las dos cosas son ciertas a la vez.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "80px",
@@ -309,7 +309,7 @@
       ],
       "copy": {
         "statement": "Supervisar la IA sin ser técnico. Seis decisiones que un consejo no puede delegar.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "80px",
@@ -328,7 +328,7 @@
       "copy": {
         "question": "¿Quién puede parar un sistema de IA mañana en su empresa?",
         "answer": "Si nadie sabe el nombre, no hay gobierno.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--question-size": "72px",
@@ -347,7 +347,7 @@
       "copy": {
         "question": "¿Qué dato de valor llega al consejo, y quién responde de él?",
         "answer": "Los datos de uso son para la dirección; al consejo le llega el valor.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--question-size": "72px",
@@ -365,7 +365,7 @@
       ],
       "copy": {
         "statement": "Dieciocho afirmaciones, cinco minutos. Autoevaluación gratuita para consejos.",
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--statement-size": "80px",
@@ -382,7 +382,7 @@
         500
       ],
       "copy": {
-        "url": "[__]"
+        "url": "supervisarlaia.es"
       },
       "vars": {
         "--title-size": "64px",

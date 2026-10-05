@@ -3,4 +3,4 @@ Disallow: /gracias/
 Disallow: /error/
 Allow: /
 
-Sitemap: https://dpereirapaz.github.io/supervisar-la-ia/sitemap.xml
+Sitemap: https://supervisarlaia.es/sitemap.xml
