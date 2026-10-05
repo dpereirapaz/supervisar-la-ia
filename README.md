@@ -40,6 +40,15 @@ El PDF no está en el repositorio ni en el sitio. Súbalo a un enlace privado (G
 
 Los huecos `[__]` de las páginas legales (`privacidad/`, `cookies/`, `aviso-legal/`) y de los JSON-LD (`index.html`) deben rellenarse antes de publicar. La lista completa está en `PROGRESO.md`.
 
+### Informes de autoevaluación
+
+Cada envío de la autoevaluación llega a Formspree con un campo `resumen` legible y las respuestas en `respuestas` (18 valores separados por comas; sin JavaScript llegan como `a1`…`a18`). Para obtener un informe en PDF por envío:
+
+1. En Formspree, exporte los envíos del formulario (Export → CSV).
+2. Ejecute `node scripts/informe.mjs ruta/a/la/exportacion.csv`. Añada `--email correo@dominio` para un solo envío y `--out carpeta` para cambiar el destino.
+
+Los PDF se guardan en `informes/`, que está excluido de git junto con los `.csv` porque contienen datos personales. El informe es de uso interno: puntuaciones, lectura según el anexo B, pregunta y criterio de cada decisión, plan de cien días priorizado según las respuestas (capítulo 6) y preguntas del anexo A para las decisiones más débiles.
+
 ## Despliegue
 
 ### GitHub Pages (principal)

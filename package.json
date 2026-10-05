@@ -8,7 +8,8 @@
     "serve": "python3 -m http.server 8000",
     "check:html": "html-validate index.html 404.html autoevaluacion/index.html whitebook/index.html gracias/index.html privacidad/index.html cookies/index.html aviso-legal/index.html",
     "check:lighthouse": "node scripts/lighthouse.mjs",
-    "render:social": "node social/render.mjs"
+    "render:social": "node social/render.mjs",
+    "informe": "node scripts/informe.mjs"
   },
   "license": "UNLICENSED",
   "devDependencies": {

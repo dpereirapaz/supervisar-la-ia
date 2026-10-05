@@ -13,3 +13,7 @@ muestra_*.png
 node_modules/
 .playwright-cache/
 lighthouse-report*/
+
+# Datos personales de leads: exportaciones de Formspree e informes generados
+informes/
+*.csv

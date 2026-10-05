@@ -106,8 +106,11 @@ for (const path of ["/", "/autoevaluacion/", "/whitebook/", "/privacidad/"]) {
   const page = await ctx.newPage();
   let posted = null;
   await page.route("https://formspree.io/**", async (route) => {
-    posted = Object.fromEntries(new URLSearchParams(route.request().postData()));
-    await route.fulfill({ status: 302, headers: { location: BASE + "/gracias/" }, body: "" });
+    const req = route.request(); const ct = req.headers()["content-type"] || "";
+    if (ct.includes("multipart")) { const raw = req.postDataBuffer().toString("utf8"); const b = ct.split("boundary=")[1]; posted = {}; for (const part of raw.split("--" + b)) { const i = part.indexOf("\r\n\r\n"); const m = part.match(/name="([^"]+)"/); if (i > 0 && m) posted[m[1]] = part.slice(i + 4).replace(/\r\n$/, ""); } }
+    else posted = Object.fromEntries(new URLSearchParams(req.postData()));
+    if ((req.headers()["accept"] || "").includes("application/json")) await route.fulfill({ status: 200, contentType: "application/json", headers: { "access-control-allow-origin": "*" }, body: '{"ok":true}' });
+    else await route.fulfill({ status: 302, headers: { location: BASE + "/gracias/" }, body: "" });
   });
   await page.goto(BASE + "/autoevaluacion/");
   for (let i = 1; i <= 18; i++) await page.click(`label[for="a${i}-3"]`);
@@ -115,7 +118,7 @@ for (const path of ["/", "/autoevaluacion/", "/whitebook/", "/privacidad/"]) {
   await page.check("#privacidad");
   await page.click("button[type=submit]");
   await page.waitForURL("**/gracias/");
-  ok("A-04 con JS", posted.puntuacion_total === "54" && posted.puntuacion_grupos === "9,9,9,9,9,9" && /^\d{4}-\d{2}-\d{2}T/.test(posted.fecha), `${posted.puntuacion_total} ${posted.puntuacion_grupos} ${posted.fecha}`);
+  ok("A-04 con JS", posted.puntuacion_total === "54" && posted.puntuacion_grupos === "9,9,9,9,9,9" && /^\d{4}-\d{2}-\d{2}T/.test(posted.fecha) && posted.respuestas === Array(18).fill(3).join(",") && /Total: 54 \/ 54/.test(posted.resumen) && page.url().endsWith("/gracias/"), `${posted.puntuacion_total} ${posted.puntuacion_grupos} resp=${posted.respuestas} resumen=${JSON.stringify((posted.resumen||"").slice(0,30))} url=${page.url()}`);
   await ctx.close();
 }
 
