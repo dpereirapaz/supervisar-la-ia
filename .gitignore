@@ -1,6 +1,5 @@
 # Nunca al repositorio (CLAUDE.md, F-07, T-10)
 *.pdf
-!social/out/linkedin-carousel.pdf
 *.docx
 .env
 .env.*
@@ -14,10 +13,18 @@ node_modules/
 .playwright-cache/
 lighthouse-report*/
 
-# Datos personales de leads: exportaciones de Formspree e informes generados
+# Datos personales de leads: exportaciones e informes generados
 informes/
 *.csv
 
 # Salida del motor de informes (kit v2)
 report/out/
 .env
+
+# Local Netlify folder
+.netlify
+
+# Estado local de netlify dev (incluye Blobs del límite de solicitudes)
+.netlify/
+deno.lock
+!.env.example

@@ -1,84 +1,63 @@
 # Supervisión de la IA · sitio web
 
-Sitio estático del whitebook «Supervisión de la IA. Seis decisiones que un consejo no puede delegar», de David Pereira Paz. Construido según `SPEC.md`.
+Sitio del whitebook «Supervisión de la IA. Seis decisiones que un consejo no puede delegar», de David Pereira Paz. Se construye según `SPEC_supervisar-la-ia_web.md` (v1.2) y su anexo `SPEC_informe-personalizado.md`.
 
 ## Propósito
 
-El sitio presenta el whitebook, ofrece una autoevaluación gratuita para consejos de administración (18 afirmaciones, calculadas en el navegador) y recoge el correo del lector a cambio del PDF o del resultado.
+El sitio presenta el whitebook y ofrece una autoevaluación gratuita para consejos de administración (18 afirmaciones calculadas en el navegador). A cambio del correo, el lector recibe el enlace al whitebook o, si ha hecho la autoevaluación, un PDF personalizado, «Lectura del consejo», con una lectura cualitativa y una propuesta para los primeros cien días.
 
-Es HTML5, CSS3 y JavaScript vanilla (ES2020). No tiene código de servidor, cookies, analítica ni dependencias en tiempo de ejecución.
+Las páginas son HTML5, CSS3 y JavaScript vanilla, sin cookies ni analítica. Una única función de Netlify, `/api/informe`, recalcula las puntuaciones, genera el PDF con `report/` y lo envía por correo con Brevo. No guarda respuestas ni informes.
 
 ## Vista previa local
 
-No hay paso de compilación. Sirva la raíz del repositorio con cualquier servidor estático:
-
 ```sh
-python3 -m http.server 8000
-# o
-npx serve .
+npm ci
+cp .env.example .env          # y ponga DELIVERY_MODE=download, SITE_HOST y CONTACT_EMAIL de prueba
+npx netlify dev --offline --port 8888
 ```
 
-Abra `http://localhost:8000/`.
+Abra `http://localhost:8888/`. Con `DELIVERY_MODE=download`, la función devuelve el PDF en la respuesta y no envía ningún correo. Netlify rechaza ese modo en producción.
 
 ## Configuración
 
-### Endpoint del formulario (T-08)
+Todas las variables se definen en Netlify (Site configuration → Environment variables). En el repositorio solo está `.env.example`, con los nombres.
 
-Los formularios de `/whitebook/` y `/autoevaluacion/` envían un `POST` HTML plano a Formspree. El endpoint se define una sola vez por página, en el atributo `action` del `<form>`:
+| Variable | Secreta | Uso |
+|---|---|---|
+| `BREVO_API_KEY` | sí | Clave de la API de Brevo |
+| `MAIL_FROM` | no | Remitente, en el dominio del sitio (no una dirección de Gmail ni de Outlook) |
+| `MAIL_FROM_NAME` | no | `David Pereira Paz` |
+| `MAIL_REPLY_TO` | no | Dirección que recibe las respuestas de los lectores |
+| `AUTHOR_EMAIL` | no | Dirección que recibe los avisos de cada lead |
+| `CONTACT_EMAIL` | no | Contacto público, usado en el informe, los mensajes de error y las páginas legales |
+| `WHITEBOOK_URL` | sí | Enlace privado al PDF del whitebook |
+| `SITE_URL` | no | URL pública, sin barra final |
+| `SITE_HOST` | no | Dominio, por ejemplo `supervisarlaia.es` |
+| `BREVO_LIST_ID` | no | Opcional: lista de Brevo para quien acepta información ocasional |
+| `DELIVERY_MODE` | no | `email` (por defecto) o `download` (solo pruebas locales) |
 
-```html
-<form action="https://formspree.io/f/[__]" method="POST">
-```
-
-El endpoint actual es `https://formspree.io/f/xyekygrz`. Para cambiarlo, sustituya el identificador en los dos `action`. El campo oculto `_next` lleva la URL absoluta de `/gracias/`; cámbiela si usa dominio propio.
-
-### Enlace privado del PDF (T-10)
-
-El PDF no está en el repositorio ni en el sitio. Súbalo a un enlace privado (Google Drive con «cualquiera con el enlace», Dropbox, etc.) y ponga ese enlace en la respuesta automática de Formspree (Form → Settings → Autoresponse). El mismo correo sirve para los dos formularios.
-
-### Datos del autor
-
-Los huecos `[__]` de las páginas legales (`privacidad/`, `cookies/`, `aviso-legal/`) y de los JSON-LD (`index.html`) deben rellenarse antes de publicar. La lista completa está en `PROGRESO.md`.
-
-### Informes de autoevaluación
-
-Cada envío de la autoevaluación llega a Formspree con un campo `resumen` legible y las respuestas en `respuestas` (18 valores separados por comas; sin JavaScript llegan como `a1`…`a18`). Para obtener un informe en PDF por envío:
-
-1. En Formspree, exporte los envíos del formulario (Export → CSV).
-2. Ejecute `node scripts/informe.mjs ruta/a/la/exportacion.csv`. Añada `--email correo@dominio` para un solo envío y `--out carpeta` para cambiar el destino.
-
-Los PDF se guardan en `informes/`, que está excluido de git junto con los `.csv` porque contienen datos personales. El informe es de uso interno: puntuaciones, lectura según el anexo B, pregunta y criterio de cada decisión, plan de cien días priorizado según las respuestas (capítulo 6) y preguntas del anexo A para las decisiones más débiles.
+Los textos del informe y de los correos están en `report/content/informe.es.json`. `node report/scripts/export-review.mjs` regenera `report/CONTENIDO_informe_revision.md`, una copia legible para revisarlos.
 
 ## Despliegue
 
-### GitHub Pages (principal)
-
-`.github/workflows/deploy.yml` publica la raíz de la rama `main`. En el repositorio, Settings → Pages → Source: GitHub Actions. La URL es `https://dpereirapaz.github.io/supervisar-la-ia/`.
-
-### Netlify (alternativa)
-
-`netlify.toml` publica la raíz y añade las cabeceras de seguridad de T-11, que GitHub Pages no admite.
+El sitio se publica en Netlify desde la rama `main` de GitHub: directorio de publicación, la raíz; funciones, `netlify/functions`; sin paso de compilación (`netlify.toml`). `.github/workflows/ci.yml` ejecuta `npm ci` y `npm test` en cada push. Los pasos que necesita una persona (dominio, Netlify, Brevo, direcciones, revisión jurídica) están en `PROGRESO.md`.
 
 ## Comprobaciones
 
-Las comprobaciones de aceptación están en `SPEC.md`, secciones 11 y 13.6. Las herramientas locales (html-validate, Lighthouse, Playwright) se instalan como dependencias de desarrollo:
-
 ```sh
-npm install
-npm run check:html      # A-01
-npm run check:lighthouse # A-02
-npm run render:social   # S-10, regenera social/out/
+npm test                          # 9 pruebas del motor y 17 de la función (Brevo simulado)
+npm run check:html                # A-01
+node scripts/ar-informe.mjs       # AR-02, AR-06, AR-07: cinco perfiles y nombres de 80 caracteres
+node scripts/check.mjs            # A-03, A-04, A-07, A-08, A-10, AR-09, R-02 (con netlify dev en marcha)
+BASE=http://localhost:8888 node scripts/lighthouse.mjs   # A-02, AR-08
 ```
 
-Los activos sociales se regeneran con `node social/render.mjs` a partir de `social/manifest.json` (plantillas en `social/templates/`, salida en `social/out/` con `alt.json`, `posts.md` y `linkedin-carousel.pdf`). Antes de publicar, sustituya `"url": "[__]"` en el manifiesto por la URL pública y vuelva a ejecutar el script; `assets/img/og-image.png` se actualiza automáticamente (S-14). El favicon PNG se regenera con `node scripts/favicon.mjs`.
+`scripts/ar-informe.mjs` deja los PDF y una imagen PNG por página en `report/out/ar/` (fuera de git) para revisarlos a ojo.
+
+## Activos sociales
+
+Se regeneran con `node social/render.mjs` a partir de `social/manifest.json` (plantillas en `social/templates/`, salida en `social/out/` con `alt.json` y `posts.md`; el `linkedin-carousel.pdf` se genera en local y no se sube). Antes de publicar, sustituya `"url": "[__]"` en el manifiesto por la URL pública y vuelva a ejecutar el script; `assets/img/og-image.png` se actualiza automáticamente (S-14). El favicon PNG se regenera con `node scripts/favicon.mjs`.
 
 ## Fuentes
 
-Poppins (400, 600) y Lora (400–600 variable, 400 italic) están en `assets/fonts/` como woff2 con subconjunto Latin (T-05). Se obtuvieron una sola vez de Google Fonts pidiendo la hoja de estilos con un User-Agent de Chrome y descargando las URL del bloque `/* latin */`:
-
-```sh
-curl -sA "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36" \
-  "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
-```
-
-El sitio no hace ninguna petición a Google Fonts en tiempo de ejecución.
+Las páginas usan Poppins (400, 600) y Lora (400–600 variable, 400 italic) en woff2 con subconjunto Latin, en `assets/fonts/` (T-05). El informe usa sus propios TTF en `report/src/fonts/`, incrustados en `report/src/fuentes.generated.mjs` (R-16). No se hace ninguna petición a Google Fonts en tiempo de ejecución.
