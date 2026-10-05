@@ -122,6 +122,21 @@ export async function renderizarInforme({ contenido: T, analisis: A, persona = {
     return lineas;
   }
 
+  // Envuelve y, si una palabra sola no cabe, la parte por caracteres (R-18).
+  function envolverEstricto(texto, f, s, maxW) {
+    const out = [];
+    for (const l of envolver(texto, f, s, maxW)) {
+      if (palabraAncho(l, f, s) <= maxW) { out.push(l); continue; }
+      let trozo = "";
+      for (const ch of l) {
+        if (trozo && f.widthOfTextAtSize(trozo + ch, s) > maxW) { out.push(trozo); trozo = ch.trim() ? ch : ""; }
+        else trozo += ch;
+      }
+      if (trozo) out.push(trozo);
+    }
+    return out;
+  }
+
   // ---------- Estado de página ----------
   let page = null;
   let y = 0; // distancia desde el borde superior
@@ -243,16 +258,19 @@ export async function renderizarInforme({ contenido: T, analisis: A, persona = {
     yy += 22;
   }
   // Bloque inferior
-  let yb = H - 190;
+  const anchoPortada = W - 64 - 64;
+  const lineasNombre = nombre ? envolverEstricto(nombre, F.p6, 13, anchoPortada) : [];
+  const lineasOrg = organizacion ? envolverEstricto(organizacion, F.p4, 11, anchoPortada) : [];
+  let yb = H - 190 - 18 * Math.max(0, lineasNombre.length + lineasOrg.length - 2);
   if (nombre || organizacion) {
     page.drawText(T.portada.preparado, { x: 64, y: Y(yb), size: 8.5, font: F.p4, color: C.onDarkMuted });
     yb += 18;
-    if (nombre) {
-      page.drawText(nombre, { x: 64, y: Y(yb), size: 13, font: F.p6, color: C.paper });
+    for (const l of lineasNombre) {
+      page.drawText(l, { x: 64, y: Y(yb), size: 13, font: F.p6, color: C.paper });
       yb += 18;
     }
-    if (organizacion) {
-      page.drawText(organizacion, { x: 64, y: Y(yb), size: 11, font: F.p4, color: C.paper });
+    for (const l of lineasOrg) {
+      page.drawText(l, { x: 64, y: Y(yb), size: 11, font: F.p4, color: C.paper });
       yb += 18;
     }
     yb += 8;
