@@ -38,7 +38,7 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 | A-02 / AR-08 | PASA | Lighthouse móvil: `/` y `/autoevaluacion/` 99/100/100/100; `autoevaluacion.js` 3,7 KB (≤ 12 KB) |
 | A-03 / AR-04 | PASA | Sin JS: landing completa; whitebook → `303 /gracias/`; fallo → `303 /error/`; autoevaluación → PDF (modo download) |
 | A-04 / AR-03 | PASA | `curl`: 200 PDF; 17 respuestas 422; valor 4 → 422; correo inválido 400; sin consentimiento 400; `_gotcha` 200 sin PDF; 20 KB 413; GET 405; sexta petición 429; producción + download 503 (prueba unitaria) |
-| A-05 | PENDIENTE | Lo hace el autor en producción (AR-13) |
+| A-05 | PASA | 2026-10-06, en producción: whitebook pedido con correo personal; correo con enlace a la v1.1 en Drive, aviso al autor y alta en la lista de Brevo |
 | A-06 / AR-10 | PASA | `git ls-files`: ningún `.pdf` ni `.env` |
 | A-07 | PASA | 0 px de desbordamiento a 360, 768 y 1440 px en 5 páginas |
 | A-08 | PASA | Autoevaluación y formulario completados solo con teclado |
@@ -51,21 +51,21 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 | AR-07 | PASA | Nombre y organización de 80 caracteres dentro de la página (tras corregir `render-pdf.mjs`) |
 | AR-11 | PASA | `netlify dev`: CSP de T-11, `nosniff`, `Referrer-Policy`, `Permissions-Policy`; `/api/informe` con `Cache-Control: no-store` |
 | AR-12 | PASA | Sin `deploy.yml` ni menciones de Formspree o Web3Forms en código, configuración, README ni CSP |
-| AR-13 | PENDIENTE | Lo hace el autor en producción |
+| AR-13 | PASA | 2026-10-06, en producción: autoevaluación → `/gracias/`, PDF adjunto en bandeja de entrada, aviso al autor; `SPF`, `DKIM` (supervisarlaia.es) y `DMARC`: PASS |
 | R-15 | PASA | Metadatos: título, autor y `es-ES`; sin datos del lector |
 
 ## Pendiente del autor
 
 ### Estado de producción (2026-10-05, noche)
 
-- Netlify: proyecto `supervisarlaia` creado desde GitHub y publicado en `https://supervisarlaia.netlify.app` (páginas, cabeceras de T-11 y función comprobadas). Variables definidas: `MAIL_FROM_NAME`, `CONTACT_EMAIL`, `SITE_URL`, `SITE_HOST`, `AUTHOR_EMAIL`, `MAIL_REPLY_TO`, `BREVO_API_KEY` y `WHITEBOOK_URL` (estas dos, solo en Production y como secretas). Falta `MAIL_FROM`.
+- Netlify: proyecto `supervisarlaia` creado desde GitHub y publicado en `https://supervisarlaia.netlify.app` (páginas, cabeceras de T-11 y función comprobadas). Variables definidas: `MAIL_FROM_NAME`, `CONTACT_EMAIL`, `SITE_URL`, `SITE_HOST`, `AUTHOR_EMAIL`, `MAIL_REPLY_TO`, `BREVO_API_KEY` y `WHITEBOOK_URL` (estas dos, solo en Production y como secretas). `MAIL_FROM` = `informes@supervisarlaia.es` (2026-10-06).
 - Dominio: `supervisarlaia.es` añadido en Netlify con DNS externa. En DonDominio: ANAME de la raíz → `supervisarlaia.netlify.app`, CNAME `www` → `supervisarlaia.netlify.app`, y los cuatro registros de Brevo (TXT `brevo-code`, CNAME `brevo1._domainkey` y `brevo2._domainkey`, TXT `_dmarc` con `p=none`). **Pendiente:** nic.es aún no publica el `.es` (NXDOMAIN); hasta entonces no resuelve nada.
-- Whitebook: `Supervision_de_la_IA_v1.0.pdf` (fuera de git) subido a Drive y enlazado en `WHITEBOOK_URL`.
+- Whitebook: `Supervision_de_la_IA_v1.1.pdf` (fuera de git, cambios del feedback de Ray aceptados) subido a Drive como nueva versión del mismo archivo; `WHITEBOOK_URL` no cambia (2026-10-06).
 - **Comprobación 2026-10-06:** `supervisarlaia.es` ya resuelve (nic.es lo publica) y `https://supervisarlaia.es` sirve el sitio desde Netlify con certificado válido. Problemas pendientes:
   - `www.supervisarlaia.es` apunta a Netlify, pero el certificado no lo cubre (solo `*.netlify.app`). Falta añadir `www` como alias del dominio en Netlify y renovar el certificado.
-  - Los registros de Brevo no están en la zona: `brevo1._domainkey`, `brevo2._domainkey` y `_dmarc` caen en el comodín de DonDominio (`* CNAME parkingsrv0.dondominio.com`). Solo aparece el TXT `brevo-code`. Hay que crearlos de nuevo con el nombre corto (`brevo1._domainkey`, no el nombre completo) o quitar el comodín de aparcamiento.
+  - Registros de Brevo corregidos (DKIM `brevo1`/`brevo2`, DMARC) y dominio autenticado en Brevo; remitente `informes@supervisarlaia.es` creado (2026-10-06).
   - `supervisarlaia.com` sigue en el aparcamiento de DonDominio (Apache, 302). Falta apuntarlo a Netlify como alias.
-- Siguientes pasos cuando resuelva la DNS: verificar el dominio en Netlify (HTTPS) y en Brevo; añadir `supervisarlaia.com` como alias; crear en Brevo el remitente (por ejemplo `informes@supervisarlaia.es`) y ponerlo en `MAIL_FROM`; volver a desplegar; prueba AR-13 y A-05; desactivar GitHub Pages.
+- Pendiente: certificado de `www.supervisarlaia.es` (alias en Netlify), `supervisarlaia.com` como alias que redirige al `.es`, desactivar GitHub Pages, desactivar en Brevo el seguimiento de aperturas y clics.
 
 ### Anexo, sección 15 (antes de publicar)
 
