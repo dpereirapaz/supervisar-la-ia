@@ -164,8 +164,8 @@
     {
       "id": 1,
       "titulo": "Por dónde empezar",
-      "pregunta": "¿Qué habéis decidido no hacer este año, y por qué?",
-      "tomada_cuando": "Está tomada cuando la dirección sabe decir qué no hará este año y explicar el motivo.",
+      "pregunta": "¿Qué habéis decidido no hacer este año, y por qué? ¿Qué límite que hoy dais por inevitable estáis poniendo a prueba, y con qué dato sabremos si ha caído?",
+      "tomada_cuando": "Está tomada cuando la dirección sabe decir qué no hará este año y por qué, y qué límite está poniendo a prueba.",
       "afirmaciones": [
         1,
         2,
@@ -177,8 +177,8 @@
         "decidida": "El consejo sabe dónde se concentra el esfuerzo y por qué, y la dirección es capaz de decir qué no hará este año. La priorización caduca cuando cambia el mercado, así que conviene revisarla al menos una vez al año."
       },
       "plan": {
-        "pedir": "Una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, y una lista de lo que la dirección ha decidido no hacer.",
-        "decidir": "Aprobar los usos prioritarios y los descartes, junto con el techo de inversión del ejercicio.",
+        "pedir": "Una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, una lista de lo que la dirección ha decidido no hacer y un límite que hoy se da por inevitable y se quiere poner a prueba.",
+        "decidir": "Aprobar los usos prioritarios y los descartes, el techo de inversión del ejercicio y el dato que dirá si el límite puesto a prueba ha caído.",
         "recibir": "La priorización por escrito y la fecha en que se revisará.",
         "mantener": "Confirmar que la priorización y los descartes se han revisado en el último año.",
         "encargo": "presentar una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, y una lista de lo que no se hará este año y por qué"

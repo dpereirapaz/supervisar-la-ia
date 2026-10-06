@@ -62,8 +62,8 @@ Estas combinaciones de respuestas no suelen darse a la vez. No tienen por qué s
 
 ### 1. Por dónde empezar
 
-*¿Qué habéis decidido no hacer este año, y por qué?*  
-Está tomada cuando la dirección sabe decir qué no hará este año y explicar el motivo.
+*¿Qué habéis decidido no hacer este año, y por qué? ¿Qué límite que hoy dais por inevitable estáis poniendo a prueba, y con qué dato sabremos si ha caído?*  
+Está tomada cuando la dirección sabe decir qué no hará este año y por qué, y qué límite está poniendo a prueba.
 
 - **Por decidir.** Todavía no hay una elección explícita de por dónde empezar. Sin ella, la IA se prioriza por quién insiste más y no por valor, riesgo y viabilidad. Tampoco se sabe qué se ha descartado, que es lo que más dice de una estrategia.
 - **A medias.** Hay una parte de la elección hecha, pero no está completa o no está por escrito. Es frecuente que exista una lista de usos sin criterio común, o que se sepa qué se quiere hacer pero no qué se descarta. Mientras no haya descartes, la lista no prioriza nada.
@@ -83,8 +83,8 @@ Está tomada cuando la dirección sabe decir qué no hará este año y explicar 
 
 **Cien días:**
 
-- *pedir:* Una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, y una lista de lo que la dirección ha decidido no hacer.
-- *decidir:* Aprobar los usos prioritarios y los descartes, junto con el techo de inversión del ejercicio.
+- *pedir:* Una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, una lista de lo que la dirección ha decidido no hacer y un límite que hoy se da por inevitable y se quiere poner a prueba.
+- *decidir:* Aprobar los usos prioritarios y los descartes, el techo de inversión del ejercicio y el dato que dirá si el límite puesto a prueba ha caído.
 - *recibir:* La priorización por escrito y la fecha en que se revisará.
 - *mantener:* Confirmar que la priorización y los descartes se han revisado en el último año.
 - *encargo (se inserta tras «…presente»):* presentar una lista priorizada de usos de IA, con el valor, el riesgo y la viabilidad de cada uno, y una lista de lo que no se hará este año y por qué
