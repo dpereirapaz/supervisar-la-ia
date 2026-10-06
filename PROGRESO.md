@@ -66,7 +66,8 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
   - Registros de Brevo corregidos (DKIM `brevo1`/`brevo2`, DMARC) y dominio autenticado en Brevo; remitente `informes@supervisarlaia.es` creado (2026-10-06).
   - `supervisarlaia.com` sigue en el aparcamiento de DonDominio (Apache, 302). Falta apuntarlo a Netlify como alias.
 - Dominios (2026-10-06): `supervisarlaia.es` principal con HTTPS; `www.supervisarlaia.es`, `supervisarlaia.com` y `www.supervisarlaia.com` redirigen con 301 al `.es` (certificado de Netlify con los cuatro nombres; reglas del `.com` en `netlify.toml`).
-- Pendiente: desactivar GitHub Pages; seguimiento de Brevo en correos transaccionales (ver BLOCKERS.md).
+- GitHub Pages desactivado (2026-10-06): `dpereirapaz.github.io/supervisar-la-ia/` responde 404; la versión con Formspree ya no está publicada.
+- Brevo: el enlace del whitebook llega sin reescribir (sin seguimiento de clics). Pendiente comprobar que no hay píxel de aperturas (ver BLOCKERS.md).
 
 ### Anexo, sección 15 (antes de publicar)
 
