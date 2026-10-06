@@ -65,7 +65,8 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
   - `www.supervisarlaia.es` apunta a Netlify, pero el certificado no lo cubre (solo `*.netlify.app`). Falta añadir `www` como alias del dominio en Netlify y renovar el certificado.
   - Registros de Brevo corregidos (DKIM `brevo1`/`brevo2`, DMARC) y dominio autenticado en Brevo; remitente `informes@supervisarlaia.es` creado (2026-10-06).
   - `supervisarlaia.com` sigue en el aparcamiento de DonDominio (Apache, 302). Falta apuntarlo a Netlify como alias.
-- Pendiente: certificado de `www.supervisarlaia.es` (alias en Netlify), `supervisarlaia.com` como alias que redirige al `.es`, desactivar GitHub Pages, desactivar en Brevo el seguimiento de aperturas y clics.
+- Dominios (2026-10-06): `supervisarlaia.es` principal con HTTPS; `www.supervisarlaia.es`, `supervisarlaia.com` y `www.supervisarlaia.com` redirigen con 301 al `.es` (certificado de Netlify con los cuatro nombres; reglas del `.com` en `netlify.toml`).
+- Pendiente: desactivar GitHub Pages; seguimiento de Brevo en correos transaccionales (ver BLOCKERS.md).
 
 ### Anexo, sección 15 (antes de publicar)
 
