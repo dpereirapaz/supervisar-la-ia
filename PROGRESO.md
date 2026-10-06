@@ -61,6 +61,10 @@ El sitio ya estaba construido con la v1.1, así que se aplican los pasos 6a a 6f
 - Netlify: proyecto `supervisarlaia` creado desde GitHub y publicado en `https://supervisarlaia.netlify.app` (páginas, cabeceras de T-11 y función comprobadas). Variables definidas: `MAIL_FROM_NAME`, `CONTACT_EMAIL`, `SITE_URL`, `SITE_HOST`, `AUTHOR_EMAIL`, `MAIL_REPLY_TO`, `BREVO_API_KEY` y `WHITEBOOK_URL` (estas dos, solo en Production y como secretas). Falta `MAIL_FROM`.
 - Dominio: `supervisarlaia.es` añadido en Netlify con DNS externa. En DonDominio: ANAME de la raíz → `supervisarlaia.netlify.app`, CNAME `www` → `supervisarlaia.netlify.app`, y los cuatro registros de Brevo (TXT `brevo-code`, CNAME `brevo1._domainkey` y `brevo2._domainkey`, TXT `_dmarc` con `p=none`). **Pendiente:** nic.es aún no publica el `.es` (NXDOMAIN); hasta entonces no resuelve nada.
 - Whitebook: `Supervision_de_la_IA_v1.0.pdf` (fuera de git) subido a Drive y enlazado en `WHITEBOOK_URL`.
+- **Comprobación 2026-10-06:** `supervisarlaia.es` ya resuelve (nic.es lo publica) y `https://supervisarlaia.es` sirve el sitio desde Netlify con certificado válido. Problemas pendientes:
+  - `www.supervisarlaia.es` apunta a Netlify, pero el certificado no lo cubre (solo `*.netlify.app`). Falta añadir `www` como alias del dominio en Netlify y renovar el certificado.
+  - Los registros de Brevo no están en la zona: `brevo1._domainkey`, `brevo2._domainkey` y `_dmarc` caen en el comodín de DonDominio (`* CNAME parkingsrv0.dondominio.com`). Solo aparece el TXT `brevo-code`. Hay que crearlos de nuevo con el nombre corto (`brevo1._domainkey`, no el nombre completo) o quitar el comodín de aparcamiento.
+  - `supervisarlaia.com` sigue en el aparcamiento de DonDominio (Apache, 302). Falta apuntarlo a Netlify como alias.
 - Siguientes pasos cuando resuelva la DNS: verificar el dominio en Netlify (HTTPS) y en Brevo; añadir `supervisarlaia.com` como alias; crear en Brevo el remitente (por ejemplo `informes@supervisarlaia.es`) y ponerlo en `MAIL_FROM`; volver a desplegar; prueba AR-13 y A-05; desactivar GitHub Pages.
 
 ### Anexo, sección 15 (antes de publicar)
