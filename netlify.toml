@@ -5,6 +5,19 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# supervisarlaia.com es un alias: todo se redirige al dominio principal
+[[redirects]]
+  from = "https://supervisarlaia.com/*"
+  to = "https://supervisarlaia.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.supervisarlaia.com/*"
+  to = "https://supervisarlaia.es/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/api/informe"
   to = "/.netlify/functions/informe"
