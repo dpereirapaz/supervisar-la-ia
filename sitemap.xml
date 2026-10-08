@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://supervisarlaia.es/</loc></url>
-  <url><loc>https://supervisarlaia.es/autoevaluacion/</loc></url>
-  <url><loc>https://supervisarlaia.es/whitebook/</loc></url>
-  <url><loc>https://supervisarlaia.es/privacidad/</loc></url>
-  <url><loc>https://supervisarlaia.es/cookies/</loc></url>
-  <url><loc>https://supervisarlaia.es/aviso-legal/</loc></url>
+  <url><loc>https://supervisarlaia.es/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/autoevaluacion/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/whitebook/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/que-ha-cambiado-realmente/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/cuanta-autonomia-dar-a-la-maquina/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/lo-que-sabe-hacer-y-lo-que-parece-que-sabe-hacer/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/la-pregunta-anterior-a-las-seis/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/las-seis-decisiones/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/por-que-la-factura-sube-si-los-precios-bajan/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/riesgos-nuevos/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/las-personas/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/responsabilidad-y-regulacion/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/que-medir-y-cuando-pedirlo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/las-tres-proximas-reuniones-del-consejo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/veinte-preguntas-para-el-consejo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/frases-que-deberian-hacer-saltar-las-alarmas/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/calendario-del-reglamento-europeo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/guia/fuentes/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/autor/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/privacidad/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/cookies/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://supervisarlaia.es/aviso-legal/</loc><lastmod>2026-10-08</lastmod></url>
 </urlset>

@@ -4,7 +4,7 @@ import * as chromeLauncher from "chrome-launcher";
 import { chromium } from "playwright";
 
 const BASE = process.env.BASE || "http://localhost:8000";
-const targets = [`${BASE}/`, `${BASE}/autoevaluacion/`];
+const targets = (process.env.TARGETS || "/,/autoevaluacion/").split(",").map((p) => BASE + p);
 const minimums = { performance: 95, accessibility: 100, "best-practices": 100, seo: 100 };
 
 const chrome = await chromeLauncher.launch({ chromePath: chromium.executablePath(), chromeFlags: ["--headless=new", "--no-sandbox"] });
