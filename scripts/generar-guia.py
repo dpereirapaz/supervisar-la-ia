@@ -2,7 +2,7 @@
 """Genera la guía en línea (/guia/, /autor/, llms.txt) a partir del whitebook en Word.
 
 SPEC_guia-en-linea.md, G-04 a G-21. El texto se publica literal; este script solo cambia el formato.
-Uso: python3 scripts/generar-guia.py Supervision_de_la_IA_v1.1_aceptada.docx
+Uso: python3 scripts/generar-guia.py Supervision_de_la_IA_v1.2_aceptada.docx
 Requiere lxml. El .docx no entra en git (F-07): se pasa como argumento.
 """
 import html, json, re, sys, unicodedata, zipfile
@@ -22,9 +22,7 @@ LINKEDIN = "https://www.linkedin.com/in/dpereirapaz/"
 
 # G-06: fragmentos incompletos o sin función en el documento. No se publican (ver BLOCKERS.md).
 OMITIR = {
-    "Los cuatro primeros cambios explican por qué funciona. El quinto, por qué nunca se controla del todo y por qué hace falta",
-    "Para un consejo, la pregunta deja de ser qué modelo de lenguaje usar y pasa a ser qué tipo de sistema conviene a cada problema de negocio,",
-    "Lo difícil y valioso hoy",
+    "Lo difícil y valioso hoy",   # rótulo suelto bajo la tabla del capítulo 9
 }
 
 # ---------------------------------------------------------------- lectura del Word

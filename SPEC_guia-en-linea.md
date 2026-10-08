@@ -16,7 +16,7 @@ Hoy no pueden: el sitio público tiene unas 650 palabras, y las 8.800 del whiteb
 
 ## 3. Fuente del texto
 
-- **G-04.** La fuente única es la última edición aceptada del whitebook en Word (hoy `Supervision_de_la_IA_v1.1_aceptada.docx`, fuera de git). El texto se publica literal: no se resume, no se reescribe y no se añaden frases al cuerpo de los capítulos.
+- **G-04.** La fuente única es la última edición aceptada del whitebook en Word (hoy `Supervision_de_la_IA_v1.2_aceptada.docx`, fuera de git). El texto se publica literal: no se resume, no se reescribe y no se añaden frases al cuerpo de los capítulos.
 - **G-05.** Las páginas se generan con `scripts/generar-guia.py` a partir de ese archivo. Cada nueva edición del whitebook se publica volviendo a ejecutar el script; nadie edita a mano el HTML generado.
 - **G-06.** Se omiten, y se anotan en BLOCKERS.md, los fragmentos que el documento tiene incompletos o sin función. No se completan con texto del constructor.
 - **G-07.** El anexo D (autoevaluación) no se duplica: la guía enlaza a `/autoevaluacion/`.
