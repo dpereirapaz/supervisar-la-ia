@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qué tipo de sistema y cómo no depender de un proveedor</title>
+  <meta name="description" content="Dos preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.">
+  <meta name="author" content="David Pereira Paz">
+  <link rel="canonical" href="https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/">
+  <meta property="og:title" content="Qué tipo de sistema y cómo no depender de un proveedor">
+  <meta property="og:description" content="Dos preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.">
+  <meta property="og:image" content="https://supervisarlaia.es/assets/img/og-image.png">
+  <meta property="og:url" content="https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Supervisión de la IA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qué tipo de sistema y cómo no depender de un proveedor">
+  <meta name="twitter:description" content="Dos preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.">
+  <meta name="twitter:image" content="https://supervisarlaia.es/assets/img/og-image.png">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png" sizes="any">
+  <link rel="preload" href="../../assets/fonts/lora-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Qué tipo de sistema y cómo no depender de un proveedor",
+  "description": "Dos preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.",
+  "author": {
+    "@type": "Person",
+    "name": "David Pereira Paz",
+    "url": "https://supervisarlaia.es/autor/"
+  },
+  "datePublished": "2026-10",
+  "inLanguage": "es-ES",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "Supervisión de la IA. Seis decisiones que un consejo no puede delegar",
+    "url": "https://supervisarlaia.es/guia/"
+  },
+  "mainEntityOfPage": "https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Guía",
+      "item": "https://supervisarlaia.es/guia/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Qué tipo de sistema y cómo no depender de un proveedor",
+      "item": "https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="visually-hidden" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-header__brand" href="../../">Supervisión de la IA</a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="../../autoevaluacion/">Autoevaluación</a></li>
+          <li><a href="../../guia/" aria-current="page">Guía</a></li>
+          <li><a href="../../whitebook/">Whitebook</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <article class="section">
+      <div class="container guia">
+        <nav class="guia-migas" aria-label="Migas"><a href="../">Guía</a> › Capítulo 7</nav>
+        <span class="kicker">Capítulo 7</span>
+        <h1>Qué tipo de sistema y cómo no depender de un proveedor</h1>
+        <p class="guia-entradilla"><em>Dos</em> <em>preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.</em></p>
+        <p class="guia-firma"><a href="../../autor/">David Pereira Paz</a> · Primera edición, octubre de 2026</p>
+<h2 id="dos-criterios-no-uno">Dos criterios, no uno</h2>
+<p>Casi todas las empresas eligen modelo por lo que pagan por respuesta, y el <a href="../por-que-la-factura-sube-si-los-precios-bajan/">capítulo 6</a> ya explica cómo repartir las consultas según su coste. El criterio que más pesa es otro, el tipo de sistema: un modelo de lenguaje da respuestas verosímiles; uno de decisión, respuestas con su grado de confianza; uno neurosimbólico, un razonamiento que se puede revisar paso a paso; uno del mundo, una representación del entorno físico. Con el precio se consigue una respuesta más barata, y con el tipo de sistema, una respuesta adaptada a cada problema.</p>
+<h2 id="del-problema-a-resolver-al-tipo-de-sistema-adecuado">Del problema a resolver al tipo de sistema adecuado</h2>
+<div class="guia-tabla guia-tabla--ancha"><table>
+<thead><tr><th scope="col">Problema</th><th scope="col">Tipo de sistema</th><th scope="col">Quién o qué comprueba la respuesta</th></tr></thead>
+<tbody>
+<tr><th scope="row">Documentos y conocimiento</th><td>Modelo de lenguaje en versión ligera</td><td>La persona que revisa, con las fuentes a la vista.</td></tr>
+<tr><th scope="row">Muchas decisiones automáticas</th><td>Modelo de decisión, o de lenguaje con un formato estricto</td><td>Un umbral de confianza: por encima actúa solo; por debajo, lo pasa a una persona.</td></tr>
+<tr><th scope="row">Decisiones reguladas</th><td>Motor de reglas con un modelo encima</td><td>Las propias reglas. El razonamiento sirve de prueba.</td></tr>
+<tr><th scope="row">Operaciones físicas</th><td>Modelo del mundo, con uno de lenguaje para recibir las órdenes</td><td>Una simulación previa a cualquier acción.</td></tr>
+<tr><th scope="row">Investigación y análisis</th><td>Agente con el modelo más avanzado</td><td>La comprobación de cada afirmación en su fuente.</td></tr>
+<tr><th scope="row">Predicción con datos estructurados propios (demanda, riesgo, mantenimiento)</th><td>Aprendizaje automático clásico</td><td>Métricas sobre datos históricos y vigilancia de que el modelo no se degrada con el tiempo.</td></tr>
+</tbody></table></div>
+<p class="guia-destacado">Diseñar bien empieza por decidir quién comprueba la respuesta. Qué modelo la genera viene después.</p>
+<h2 id="modelos-abiertos-o-de-pago-tres-ideas-equivocadas">Modelos abiertos o de pago: tres ideas equivocadas</h2>
+<h3 id="un-modelo-abierto-es-software-libre">«Un modelo abierto es software libre»</h3>
+<p>Con un modelo abierto se obtiene un modelo ya entrenado, pero no los datos con los que se entrenó, ni siempre el código, ni necesariamente una licencia amplia. Se puede usar y ajustar, pero no reproducir ni auditar a fondo.</p>
+<h3 id="instalarlo-en-casa-sale-mas-barato">«Instalarlo en casa sale más barato»</h3>
+<p>Solo a partir de cierto volumen. Lo que se ahorra en la factura del proveedor se gasta en infraestructura hoy difícil de conseguir (por ejemplo, procesadores gráficos o GPU), en personal especializado, en actualizaciones y en pruebas de seguridad. Un análisis de 2025 sitúa el punto de equilibrio en unos 50 millones de <em>tokens</em> al mes (el <em>token</em> es la unidad en que se factura el texto). Por debajo, sale más a cuenta el servicio del proveedor; por encima, la inversión se recupera en un plazo de entre 2 y 24 meses, según el tamaño del modelo.</p>
+<h3 id="tenerlo-en-casa-nos-da-soberania">«Tenerlo en casa nos da soberanía»</h3>
+<p>Lo que preguntan reguladores y clientes tiene que ver con los contratos, el lugar donde se guardan los datos, quién accede a ellos y qué queda registrado, no con dónde está instalado el modelo. La soberanía se garantiza primero por contrato. Además, quien instala su propio modelo asume también su seguridad.</p>
+<div class="guia-recuadro" role="note">
+<p class="guia-recuadro__titulo">La pregunta que conviene hacerse</p>
+<p>Con nuestro volumen, nuestras obligaciones y el equipo que tenemos de verdad, ¿cuánto nos cuesta cada opción? Planteada así, se convierte en una cuenta que se puede revisar cada año. Para no depender de un solo proveedor no hace falta instalarlo todo en casa; basta con que todas las consultas pasen por un sistema propio que permita cambiar de modelo fácilmente.</p>
+</div>
+        <nav class="guia-pasos" aria-label="Capítulos"><a class="guia-pasos__ant" href="../por-que-la-factura-sube-si-los-precios-bajan/"><span>Anterior</span> Por qué la factura sube si los precios bajan</a><a class="guia-pasos__sig" href="../riesgos-nuevos/"><span>Siguiente</span> Riesgos nuevos</a></nav>
+      </div>
+    </article>
+    <section class="section section--ink cta" aria-labelledby="empiece">
+      <div class="container">
+        <h2 id="empiece">Empiece por la autoevaluación</h2>
+        <p>Dieciocho afirmaciones, cinco minutos. El resultado le dice qué decisiones puntúan cero.</p>
+        <a class="btn btn--primary" href="../../autoevaluacion/">Hacer la autoevaluación</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 David Pereira Paz. Las opiniones son del autor y no representan a ninguna organización con la que colabora.</p>
+      <nav aria-label="Legal">
+        <ul class="site-footer__links">
+          <li><a href="../../privacidad/">Privacidad</a></li>
+          <li><a href="../../cookies/">Cookies</a></li>
+          <li><a href="../../aviso-legal/">Aviso legal</a></li>
+          <li><a href="https://www.linkedin.com/in/dpereirapaz/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -622,3 +622,52 @@ input[type="radio"]:focus-visible + .scale__option {
   .bar__fill { background: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   a { color: #000; text-decoration: none; }
 }
+
+/* 22. Guía en línea (SPEC_guia-en-linea.md, G-11 a G-14) */
+.guia h2 { font-size: 30px; margin: 64px 0 20px; }
+.guia h3 { font-size: 22px; margin: 36px 0 12px; }
+.guia-migas { font-family: var(--heading); font-size: 15px; color: var(--muted); margin-bottom: 32px; }
+.guia-migas a { color: var(--muted); }
+.guia-entradilla { font-size: 23px; line-height: 1.5; font-style: italic; color: var(--muted); padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
+.guia-firma { font-family: var(--heading); font-size: 15px; color: var(--muted); margin-bottom: 40px; }
+.guia-firma a { color: var(--muted); }
+.guia-destacado { font-family: var(--heading); font-size: 24px; line-height: 1.4; color: var(--ink); margin: 48px 0; }
+.guia-destacado::before { content: ""; display: block; width: 48px; height: 3px; background: var(--signal); margin-bottom: 20px; }
+.guia-etiqueta { font-family: var(--heading); font-size: 14px; color: var(--signal); border-top: 1px solid var(--rule); padding-top: 20px; margin: 48px 0 4px; }
+.guia-etiqueta + h2, .guia-etiqueta + h3 { margin-top: 0; }
+.guia-pregunta { font-style: italic; }
+.guia-nota { font-size: 16px; color: var(--muted); }
+.guia-recuadro { background: var(--tint); padding: 24px 28px; margin: 32px 0; max-width: 68ch; }
+.guia-recuadro > :last-child { margin-bottom: 0; }
+.guia-recuadro__titulo { font-family: var(--heading); font-weight: 600; font-size: 15px; color: var(--ink); margin-bottom: 8px; }
+.guia-recuadro p > strong:first-child { font-family: var(--heading); font-size: 15px; }
+.guia-cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; margin: 40px 0; }
+.guia-cifra p { font-size: 16px; margin-bottom: 0; }
+.guia-cifra .guia-cifra__valor { font-family: var(--heading); font-size: 34px; font-weight: 600; line-height: 1.1; color: var(--signal); margin-bottom: 8px; }
+.guia-tabla { overflow-x: auto; margin: 32px 0; }
+.guia-tabla table { border-collapse: collapse; width: 100%; font-size: 16px; line-height: 1.45; }
+.guia-tabla--ancha table { min-width: 600px; }
+.guia-tabla th, .guia-tabla td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--rule); }
+.guia-tabla thead th { font-family: var(--heading); font-size: 14px; font-weight: 600; color: var(--ink); border-bottom: 2px solid var(--ink); }
+.guia-tabla tbody th { font-family: var(--heading); font-size: 15px; font-weight: 400; color: var(--ink); }
+.guia-indice { list-style: none; padding: 0; margin: 0 0 32px; }
+.guia-indice li { max-width: none; border-bottom: 1px solid var(--rule); }
+.guia-indice a { display: block; padding: 14px 0; text-decoration: none; font-family: var(--heading); font-size: 19px; }
+.guia-indice span { display: block; font-size: 13px; color: var(--signal); margin-bottom: 2px; }
+.guia-pasos { display: flex; gap: 24px; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); }
+.guia-pasos a { font-family: var(--heading); text-decoration: none; max-width: 48%; }
+.guia-pasos span { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.guia-pasos__sig { margin-left: auto; text-align: right; }
+@media (max-width: 639.98px) {
+  .guia h2 { font-size: 26px; }
+  .guia-entradilla { font-size: 20px; }
+  .guia-destacado { font-size: 21px; }
+  .guia-pasos { flex-direction: column; }
+  .guia-pasos a { max-width: none; }
+  .guia-pasos__sig { text-align: left; margin-left: 0; }
+}
+@media print {
+  .guia-migas, .guia-pasos { display: none !important; }
+  .guia-tabla { overflow: visible; }
+  .guia-tabla--ancha table { min-width: 0; }
+}

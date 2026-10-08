@@ -1,0 +1,31 @@
+# Supervisión de la IA
+
+> Seis decisiones que un consejo no puede delegar. Guía breve para consejeros de administración sobre la supervisión de la inteligencia artificial, de David Pereira Paz. Texto completo en español, en abierto.
+
+## Guía
+
+- [Supervisión de la IA. Seis decisiones que un consejo no puede delegar](https://supervisarlaia.es/guia/): Seis decisiones que un consejo no puede delegar. Guía breve para consejeros, de David Pereira Paz. Texto completo en abierto.
+- [Qué ha cambiado realmente](https://supervisarlaia.es/guia/que-ha-cambiado-realmente/): La inteligencia artificial existe desde 1956. Lo que ha cambiado es lo poco que cuesta obtener buenas respuestas.
+- [Cuánta autonomía dar a la máquina](https://supervisarlaia.es/guia/cuanta-autonomia-dar-a-la-maquina/): La autonomía debe concederse por grados. Cada grado da más capacidad y abre nuevos tipos de errores.
+- [Lo que sabe hacer y lo que parece que sabe hacer](https://supervisarlaia.es/guia/lo-que-sabe-hacer-y-lo-que-parece-que-sabe-hacer/): Superar un test automatizado no demuestra que la máquina razone. La pregunta de si hemos llegado a una inteligencia general sigue abierta.
+- [La pregunta anterior a las seis](https://supervisarlaia.es/guia/la-pregunta-anterior-a-las-seis/): Antes de decidir cómo adoptar la IA, hay que saber si cambia aquello que la empresa vende.
+- [Las seis decisiones](https://supervisarlaia.es/guia/las-seis-decisiones/): Antes de invertir el próximo euro en proyectos de IA o lanzar pequeñas pruebas de concepto.
+- [Por qué la factura sube si los precios bajan](https://supervisarlaia.es/guia/por-que-la-factura-sube-si-los-precios-bajan/): Ninguna persona debería decidir caso a caso qué modelo atiende cada consulta.
+- [Qué tipo de sistema y cómo no depender de un proveedor](https://supervisarlaia.es/guia/que-tipo-de-sistema-y-como-no-depender-de-un-proveedor/): Dos preguntas que parecen técnicas pero son estratégicas. Es fácil responderlas mal y rectificar cuesta mucho.
+- [Riesgos nuevos](https://supervisarlaia.es/guia/riesgos-nuevos/): Cada sistema de IA abre una puerta nueva a ciberataques.
+- [Las personas](https://supervisarlaia.es/guia/las-personas/): Aprender a usar herramientas es lo fácil. Lo difícil es renunciar a aquello por lo que uno es reconocido.
+- [Responsabilidad y regulación](https://supervisarlaia.es/guia/responsabilidad-y-regulacion/): Actuar con responsabilidad no es un coste añadido. Bien hecho, distingue a una empresa de sus competidores.
+- [Qué medir y cuándo pedirlo](https://supervisarlaia.es/guia/que-medir-y-cuando-pedirlo/): Dicen los ingleses que pesar el cerdo no lo engorda. Pero tarde o temprano hay que saber cuánto pesa.
+- [Las tres próximas reuniones del consejo](https://supervisarlaia.es/guia/las-tres-proximas-reuniones-del-consejo/): Qué pedir, qué aprobar y qué recibir en los primeros cien días. El plan de implantación es de la dirección; la agenda es del consejo.
+- [Veinte preguntas para el consejo](https://supervisarlaia.es/guia/veinte-preguntas-para-el-consejo/): Pueden usarse tal cual o adaptarse. No hace falta plantearlas todas en la misma reunión.
+- [Frases que deberían hacer saltar las alarmas](https://supervisarlaia.es/guia/frases-que-deberian-hacer-saltar-las-alarmas/): No significan necesariamente que algo vaya mal, pero justifican una segunda pregunta.
+- [Calendario del Reglamento europeo](https://supervisarlaia.es/guia/calendario-del-reglamento-europeo/): Reglamento (UE) 2024/1689, modificado por el Reglamento (UE) 2026/1744. Situación en septiembre de 2026.
+- [Fuentes](https://supervisarlaia.es/guia/fuentes/): Fuentes citadas en el texto, por orden alfabético.
+
+## Herramientas
+
+- [Autoevaluación del consejo](https://supervisarlaia.es/autoevaluacion/): dieciocho afirmaciones, tres por decisión, puntuadas de 0 a 3.
+
+## Autor
+
+- [Sobre el autor](https://supervisarlaia.es/autor/): David Pereira Paz es ingeniero de Telecomunicación por la Universidad de Vigo y ha cursado programas de alta dirección y para consejeros en IESE y ESADE.
